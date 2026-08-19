@@ -1,33 +1,65 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F8FAFC;
+  /* Colors */
+  --background: #FFFFFF;
   --foreground: #171717;
-  --primary : #6366F1;
-  --secondary : #c196fb;
-  --success : #10B981;
-  --warning : #F59E0B;
-  --danger :  #EF4444;
-  --surface :  #FFFFFF;
+
+  --primary: #6366F1;
+  --secondary: #C196FB;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --surface: #F3F4F6;
+
+  /* Typography - Font Sizes */
+  --text-heading1: 32px;
+  --text-heading2: 24px;
+  --text-heading3: 18px;
+  --text-body1: 16px;
+  --text-body2: 14px;
+  --text-caption: 12px;
+
+  /* Typography - Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  --color-success: var(--success); 
+  --color-success: var(--success);
   --color-warning: var(--warning);
   --color-danger: var(--danger);
   --color-surface: var(--surface);
+
+  /* Typography */
+  --text-heading1: var(--text-heading1);
+  --text-heading2: var(--text-heading2);
+  --text-heading3: var(--text-heading3);
+  --text-body1: var(--text-body1);
+  --text-body2: var(--text-body2);
+  --text-caption: var(--text-caption);
+
+  /* Font Weights */
+  --font-weight-regular: var(--font-weight-regular);
+  --font-weight-medium: var(--font-weight-medium);
+  --font-weight-semibold: var(--font-weight-semibold);
+  --font-weight-bold: var(--font-weight-bold);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #F3F4F6;
   }
 }
 
