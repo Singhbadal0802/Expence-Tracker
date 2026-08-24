@@ -60,6 +60,8 @@
   :root {
     --background: #0a0a0a;
     --foreground: #F3F4F6;
+
+    --primary: #63f1f1;
   }
 }
 
