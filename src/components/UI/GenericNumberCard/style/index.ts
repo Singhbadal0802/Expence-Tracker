@@ -1,12 +1,12 @@
 import { cva } from "class-variance-authority";
 
-export const icon = cva("p-2 border-dashed border-2 rounded-xl", {
+export const icon = cva("p-2 rounded-xl", {
   variants: {
     colorTone: {
-      success: "bg-success/10 border-success",
-      primary: "bg-primary/10 border-primary",
-      danger: "bg-danger/10 border-danger",
-      warning: "bg-warning/10 border-warning",
+      success: "bg-success/10 border-success text-success",
+      primary: "bg-primary/10 border-primary text-primary",
+      danger: "bg-danger/10 border-danger text-danger",
+      warning: "bg-warning/10 border-warning text-warning",
     },
   },
   defaultVariants: {

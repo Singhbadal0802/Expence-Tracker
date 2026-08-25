@@ -1,6 +1,6 @@
 import Button from "@/components/UI/Button";
 import GenericNumberCard from "@/components/UI/GenericNumberCard";
-import { Bell, CalendarDays } from "lucide-react";
+import { Bell, ReceiptIndianRupee, BanknoteArrowUp, BanknoteArrowDown, PiggyBank } from "lucide-react";
 
 export default function Home() {
   const currentMonth = new Date().toISOString().slice(0, 7);
@@ -11,6 +11,7 @@ export default function Home() {
       "tone" : "primary",
       "performance" : "Increase",
       "performanceAmmount" : 12.5,
+      IconName : ReceiptIndianRupee
     },
         {
       "title" : "Total Income",
@@ -18,6 +19,7 @@ export default function Home() {
       "tone" : "success",
       "performance" : "Increase",
       "performanceAmmount" : 8.3,
+      IconName : BanknoteArrowUp
     },
         {
       "title" : "Total Expenses",
@@ -25,6 +27,7 @@ export default function Home() {
       "tone" : "danger",
       "performance" : "decrease",
       "performanceAmmount" : 5.6,
+      IconName : BanknoteArrowDown
     },
         {
       "title" : "Savings",
@@ -32,6 +35,7 @@ export default function Home() {
       "tone" : "warning",
       "performance" : "Increase",
       "performanceAmmount" : 18.2,
+      IconName : PiggyBank
     }
   ]
   return (
