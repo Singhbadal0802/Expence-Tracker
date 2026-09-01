@@ -1,43 +1,12 @@
-import Button from "@/components/UI/Button";
-import GenericNumberCard from "@/components/UI/GenericNumberCard";
-import { Bell, ReceiptIndianRupee, BanknoteArrowUp, BanknoteArrowDown, PiggyBank } from "lucide-react";
+"use client"
+import { useEffect, useState } from "react";
+import { Bell } from "lucide-react";
+import DashboardCards from "@/components/MFA/DashBoardCards";
 
 export default function Home() {
   const currentMonth = new Date().toISOString().slice(0, 7);
-  const GenericCardArray = [
-    {
-      "title" : "Total Balance",
-      "Ammount" : 4570,
-      "tone" : "primary",
-      "performance" : "Increase",
-      "performanceAmmount" : 12.5,
-      IconName : ReceiptIndianRupee
-    },
-        {
-      "title" : "Total Income",
-      "Ammount" : 7500,
-      "tone" : "success",
-      "performance" : "Increase",
-      "performanceAmmount" : 8.3,
-      IconName : BanknoteArrowUp
-    },
-        {
-      "title" : "Total Expenses",
-      "Ammount" : 2930,
-      "tone" : "danger",
-      "performance" : "decrease",
-      "performanceAmmount" : 5.6,
-      IconName : BanknoteArrowDown
-    },
-        {
-      "title" : "Savings",
-      "Ammount" : 4570,
-      "tone" : "warning",
-      "performance" : "Increase",
-      "performanceAmmount" : 18.2,
-      IconName : PiggyBank
-    }
-  ]
+  const [selectedMonth, setSelectedMonth] = useState<string>(currentMonth);
+
   return (
     <main className="flex flex-1 flex-col gap-4 md:gap-16">
       <div className="flex flex-row w-full h-max justify-between items-center">
@@ -50,7 +19,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-row gap-6 justify-end items-center">
-          <input type="month" name="selectedMonthRange" defaultValue={currentMonth} max={currentMonth} className="hidden md:flex flex-row gap-4 border border-2 border-gray-300 px-4 py-2 rounded-xl text-gray-600 text-body1 font-regular bg-surface"/>
+          <input type="month" name="selectedMonthRange" defaultValue={currentMonth} max={currentMonth} onChange={(e)=> setSelectedMonth(e.target.value)} className="hidden md:flex flex-row gap-4 border border-2 border-gray-300 px-4 py-2 rounded-xl text-gray-600 text-body1 font-regular bg-surface"/>
           {/* <div className="flex flex-row gap-4 border border-2 border-gray-300 px-4 py-2 rounded-xl text-gray-600 text-body1 font-regular">01 Aug - 31 Aug 2026 <CalendarDays /></div> */}
           <div className="relative">
             <a href="/notifications"><Bell className="rounded-full border border-3 border-gray-300 p-2 w-10 h-10" /></a>
@@ -62,11 +31,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="flex flex-row flex-wrap justify-between">
-        {GenericCardArray.map((Card) => (
-          <GenericNumberCard key={`Expense-tracker-${Card.title}`} {...Card as any}/>
-        ))}
-      </div>
+        <DashboardCards selectedMonth={selectedMonth} />
     </main>
   );
 }

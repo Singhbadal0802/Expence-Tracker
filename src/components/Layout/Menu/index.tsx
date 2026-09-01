@@ -1,19 +1,21 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import {
   LayoutDashboard,
   WalletCards,
-  ArrowLeftRight,
-  Tags,
+  List,
+  LayoutFreeform,
   ChartPie,
   ChartNoAxesCombined,
   Target,
-  RefreshCw,
   Bell,
   Settings,
   CircleUser,
   CircleHelp,
   LogOut,
+  PlusCircle,
 } from "lucide-react";
+import data from '@/utilities/expenceData.json';
 
 const MenuBar = () => {
   const MenuOptions = [
@@ -23,17 +25,17 @@ const MenuBar = () => {
       menuUrl: "/",
     },
     {
-      icon: WalletCards,
-      menuLabel: "Accounts",
-      menuUrl: "/accounts",
-    },
-    {
-      icon: ArrowLeftRight,
+      icon: List,
       menuLabel: "Transactions",
       menuUrl: "/transactions",
     },
     {
-      icon: Tags,
+      icon: PlusCircle,
+      menuLabel: "Add Transaction",
+      menuUrl: "/new",
+    },
+    {
+      icon: LayoutFreeform,
       menuLabel: "Categories",
       menuUrl: "/categories",
     },
@@ -52,11 +54,6 @@ const MenuBar = () => {
       menuLabel: "Goals",
       menuUrl: "/goals",
     },
-    // {
-    //   icon: RefreshCw,
-    //   menuLabel: "Recurring Transactions",
-    //   menuUrl: "/recurring",
-    // },
     {
       icon: Bell,
       menuLabel: "Notifications",
@@ -83,6 +80,11 @@ const MenuBar = () => {
       menuUrl: "/logout",
     },
   ];
+
+  useEffect(()=>{
+    sessionStorage.setItem('userData', JSON.stringify(data));
+  },[])
+
   return (
     <nav className="h-[95vh] min-w-68 max-w-72 flex-col gap-md border-r-4 border-gray-200 hidden md:flex">
         <div className="flex group text-center font-bold text-heading3 gap-4 items-center py-4"><img src="/assests/favicon.png" className="w-12 h-12 p-1 bg-primary rounded-lg"/>Expence Tracker</div>

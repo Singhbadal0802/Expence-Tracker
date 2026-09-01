@@ -5,7 +5,8 @@ export interface GenericNumberCardProps {
     tone : "primary" | "success" | "warning" | "danger";
     title : string;
     IconName? : React.ElementType;
-    performance : "Increase" | "decrease";
+    performance : "Increase" | "Decrease";
     performanceAmmount : number;
     currencySymbol? : "$" | "£" | "₹" | "Rs.";
+    isLoading : boolean
 }

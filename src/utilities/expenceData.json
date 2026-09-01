@@ -1,0 +1,3444 @@
+{
+  "user": {
+    "userId": "USR20394",
+    "name": "Prem Sharma",
+    "email": "prem.sharma@example.com",
+    "phone": "+91-9876543210",
+    "profileImageUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=Prem",
+    "currencyPreference": "INR",
+    "joinedDate": "2024-03-15",
+    "monthlyBudget": 45000.0
+  },
+  "summary": {
+    "periodStart": "2025-10",
+    "periodEnd": "2026-09",
+    "totalIncomeLast12Months": 798130.94,
+    "totalSpentLast12Months": 769242.44,
+    "netSavingsLast12Months": 28888.5,
+    "averageMonthlyIncome": 66510.91,
+    "averageMonthlySpend": 64103.54,
+    "highestSpendingMonth": "2026-06",
+    "lowestSpendingMonth": "2026-04",
+    "highestIncomeMonth": "2026-09"
+  },
+  "monthlySummary": [
+    {
+      "month": "2025-10",
+      "totalIncome": 65541.76,
+      "totalSpent": 75239.76,
+      "netSavings": -9698.0,
+      "transactionCount": 28,
+      "categoryBreakdown": {
+        "Transportation": 13131.02,
+        "Utilities": 11654.45,
+        "Entertainment": 13093.64,
+        "Rent & Housing": 5703.6,
+        "Health": 1868.47,
+        "Education": 12770.19,
+        "Miscellaneous": 3537.63,
+        "Shopping": 8303.4,
+        "Travel": 5177.36
+      },
+      "incomeBreakdown": {
+        "Salary": 65541.76
+      }
+    },
+    {
+      "month": "2025-11",
+      "totalIncome": 64208.45,
+      "totalSpent": 65362.66,
+      "netSavings": -1154.21,
+      "transactionCount": 29,
+      "categoryBreakdown": {
+        "Shopping": 7386.62,
+        "Education": 7451.93,
+        "Transportation": 12114.55,
+        "Entertainment": 9320.49,
+        "Utilities": 5769.69,
+        "Travel": 5953.39,
+        "Miscellaneous": 4072.3,
+        "Rent & Housing": 3790.57,
+        "Food & Dining": 9503.12
+      },
+      "incomeBreakdown": {
+        "Salary": 64208.45
+      }
+    },
+    {
+      "month": "2025-12",
+      "totalIncome": 70906.89,
+      "totalSpent": 50034.25,
+      "netSavings": 20872.64,
+      "transactionCount": 19,
+      "categoryBreakdown": {
+        "Utilities": 5061.48,
+        "Rent & Housing": 4710.9,
+        "Miscellaneous": 2884.49,
+        "Entertainment": 3783.27,
+        "Shopping": 1615.08,
+        "Food & Dining": 4656.66,
+        "Transportation": 13316.56,
+        "Education": 7259.05,
+        "Health": 3203.71,
+        "Travel": 3543.05
+      },
+      "incomeBreakdown": {
+        "Salary": 64166.42,
+        "Interest": 6740.47
+      }
+    },
+    {
+      "month": "2026-01",
+      "totalIncome": 65008.35,
+      "totalSpent": 58186.65,
+      "netSavings": 6821.7,
+      "transactionCount": 23,
+      "categoryBreakdown": {
+        "Entertainment": 10647.47,
+        "Rent & Housing": 10303.26,
+        "Utilities": 2232.76,
+        "Travel": 1560.69,
+        "Shopping": 10484.6,
+        "Education": 10574.35,
+        "Health": 4563.76,
+        "Miscellaneous": 5218.27,
+        "Transportation": 2601.49
+      },
+      "incomeBreakdown": {
+        "Salary": 65008.35
+      }
+    },
+    {
+      "month": "2026-02",
+      "totalIncome": 64255.05,
+      "totalSpent": 75703.08,
+      "netSavings": -11448.03,
+      "transactionCount": 30,
+      "categoryBreakdown": {
+        "Entertainment": 3659.14,
+        "Food & Dining": 10875.87,
+        "Transportation": 10169.3,
+        "Education": 17055.17,
+        "Travel": 5991.85,
+        "Utilities": 7247.51,
+        "Shopping": 3152.4,
+        "Rent & Housing": 11267.01,
+        "Miscellaneous": 2466.74,
+        "Health": 3818.09
+      },
+      "incomeBreakdown": {
+        "Salary": 64255.05
+      }
+    },
+    {
+      "month": "2026-03",
+      "totalIncome": 67734.79,
+      "totalSpent": 73418.01,
+      "netSavings": -5683.22,
+      "transactionCount": 29,
+      "categoryBreakdown": {
+        "Transportation": 18041.37,
+        "Food & Dining": 2900.19,
+        "Rent & Housing": 2217.64,
+        "Miscellaneous": 9224.55,
+        "Utilities": 921.88,
+        "Shopping": 9884.73,
+        "Health": 10598.21,
+        "Education": 8918.67,
+        "Entertainment": 6174.55,
+        "Travel": 4536.22
+      },
+      "incomeBreakdown": {
+        "Salary": 67734.79
+      }
+    },
+    {
+      "month": "2026-04",
+      "totalIncome": 65835.34,
+      "totalSpent": 48357.49,
+      "netSavings": 17477.85,
+      "transactionCount": 19,
+      "categoryBreakdown": {
+        "Rent & Housing": 6917.48,
+        "Utilities": 4065.15,
+        "Entertainment": 12570.84,
+        "Miscellaneous": 9124.53,
+        "Travel": 3891.95,
+        "Shopping": 5688.06,
+        "Food & Dining": 1476.12,
+        "Transportation": 4623.36
+      },
+      "incomeBreakdown": {
+        "Salary": 65835.34
+      }
+    },
+    {
+      "month": "2026-05",
+      "totalIncome": 65237.35,
+      "totalSpent": 55455.79,
+      "netSavings": 9781.56,
+      "transactionCount": 22,
+      "categoryBreakdown": {
+        "Utilities": 5279.82,
+        "Travel": 7776.8,
+        "Rent & Housing": 8131.28,
+        "Health": 4852.41,
+        "Food & Dining": 7445.0,
+        "Education": 4890.4,
+        "Entertainment": 5573.1,
+        "Shopping": 5289.11,
+        "Miscellaneous": 6217.87
+      },
+      "incomeBreakdown": {
+        "Salary": 65237.35
+      }
+    },
+    {
+      "month": "2026-06",
+      "totalIncome": 64133.41,
+      "totalSpent": 76944.3,
+      "netSavings": -12810.89,
+      "transactionCount": 28,
+      "categoryBreakdown": {
+        "Utilities": 7199.86,
+        "Miscellaneous": 14053.66,
+        "Transportation": 4910.8,
+        "Education": 12040.25,
+        "Entertainment": 11549.48,
+        "Travel": 6836.17,
+        "Food & Dining": 5399.59,
+        "Health": 770.57,
+        "Shopping": 11288.6,
+        "Rent & Housing": 2895.32
+      },
+      "incomeBreakdown": {
+        "Salary": 64133.41
+      }
+    },
+    {
+      "month": "2026-07",
+      "totalIncome": 66309.43,
+      "totalSpent": 67891.37,
+      "netSavings": -1581.94,
+      "transactionCount": 28,
+      "categoryBreakdown": {
+        "Rent & Housing": 4929.8,
+        "Shopping": 3553.54,
+        "Miscellaneous": 4638.71,
+        "Transportation": 4927.81,
+        "Health": 8856.4,
+        "Utilities": 8195.47,
+        "Travel": 13855.08,
+        "Food & Dining": 10857.31,
+        "Entertainment": 4074.61,
+        "Education": 4002.64
+      },
+      "incomeBreakdown": {
+        "Salary": 66309.43
+      }
+    },
+    {
+      "month": "2026-08",
+      "totalIncome": 65462.99,
+      "totalSpent": 70666.1,
+      "netSavings": -5203.11,
+      "transactionCount": 29,
+      "categoryBreakdown": {
+        "Health": 9158.43,
+        "Travel": 3046.86,
+        "Education": 5650.14,
+        "Rent & Housing": 7890.23,
+        "Transportation": 7477.93,
+        "Utilities": 4545.6,
+        "Food & Dining": 4424.72,
+        "Miscellaneous": 13603.95,
+        "Entertainment": 13194.03,
+        "Shopping": 1674.21
+      },
+      "incomeBreakdown": {
+        "Salary": 65462.99
+      }
+    },
+    {
+      "month": "2026-09",
+      "totalIncome": 73497.13,
+      "totalSpent": 51982.98,
+      "netSavings": 21514.15,
+      "transactionCount": 19,
+      "categoryBreakdown": {
+        "Health": 10281.75,
+        "Shopping": 2054.91,
+        "Miscellaneous": 12417.32,
+        "Transportation": 7324.49,
+        "Education": 2676.49,
+        "Entertainment": 774.9,
+        "Utilities": 2346.57,
+        "Travel": 14106.55
+      },
+      "incomeBreakdown": {
+        "Salary": 65640.33,
+        "Freelance": 7856.8
+      }
+    }
+  ],
+  "income": [
+    {
+      "incomeId": "INC5001",
+      "date": "2025-10-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 65541.76,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5002",
+      "date": "2025-11-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 64208.45,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5003",
+      "date": "2025-12-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 64166.42,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5004",
+      "date": "2025-12-30",
+      "source": "Interest",
+      "payer": "Savings Account Interest",
+      "amount": 6740.47,
+      "currency": "INR",
+      "paymentMode": "UPI"
+    },
+    {
+      "incomeId": "INC5005",
+      "date": "2026-01-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 65008.35,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5006",
+      "date": "2026-02-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 64255.05,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5007",
+      "date": "2026-03-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 67734.79,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5008",
+      "date": "2026-04-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 65835.34,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5009",
+      "date": "2026-05-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 65237.35,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5010",
+      "date": "2026-06-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 64133.41,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5011",
+      "date": "2026-07-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 66309.43,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5012",
+      "date": "2026-08-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 65462.99,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5013",
+      "date": "2026-09-01",
+      "source": "Salary",
+      "payer": "Acme Technologies Pvt Ltd",
+      "amount": 65640.33,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    },
+    {
+      "incomeId": "INC5014",
+      "date": "2026-09-26",
+      "source": "Freelance",
+      "payer": "Upwork Client Payment",
+      "amount": 7856.8,
+      "currency": "INR",
+      "paymentMode": "Bank Transfer"
+    }
+  ],
+  "expenses": [
+    {
+      "expenseId": "EXP1001",
+      "date": "2025-10-08",
+      "category": "Transportation",
+      "merchant": "Uber",
+      "amount": 3720.67,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1002",
+      "date": "2025-10-29",
+      "category": "Utilities",
+      "merchant": "Electricity Bill",
+      "amount": 3399.66,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1003",
+      "date": "2025-10-03",
+      "category": "Transportation",
+      "merchant": "Metro Card Recharge",
+      "amount": 207.32,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1004",
+      "date": "2025-10-23",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 2828.16,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1005",
+      "date": "2025-10-09",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 2273.58,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1006",
+      "date": "2025-10-05",
+      "category": "Utilities",
+      "merchant": "Mobile Recharge",
+      "amount": 1734.24,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1007",
+      "date": "2025-10-04",
+      "category": "Health",
+      "merchant": "Apollo Pharmacy",
+      "amount": 509.09,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1008",
+      "date": "2025-10-02",
+      "category": "Health",
+      "merchant": "Doctor Consultation",
+      "amount": 1359.38,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1009",
+      "date": "2025-10-13",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 4866.92,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1010",
+      "date": "2025-10-20",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 4155.55,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1011",
+      "date": "2025-10-02",
+      "category": "Miscellaneous",
+      "merchant": "ATM Withdrawal",
+      "amount": 3537.63,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1012",
+      "date": "2025-10-28",
+      "category": "Shopping",
+      "merchant": "Amazon",
+      "amount": 4283.82,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1013",
+      "date": "2025-10-27",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 2294.38,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1014",
+      "date": "2025-10-22",
+      "category": "Utilities",
+      "merchant": "Internet - Airtel Fiber",
+      "amount": 1808.59,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1015",
+      "date": "2025-10-08",
+      "category": "Transportation",
+      "merchant": "Ola",
+      "amount": 2693.99,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1016",
+      "date": "2025-10-30",
+      "category": "Travel",
+      "merchant": "Hotel Booking",
+      "amount": 1386.24,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1017",
+      "date": "2025-10-25",
+      "category": "Entertainment",
+      "merchant": "BookMyShow",
+      "amount": 4222.12,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1018",
+      "date": "2025-10-13",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 4034.98,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1019",
+      "date": "2025-10-19",
+      "category": "Transportation",
+      "merchant": "Ola",
+      "amount": 4570.02,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1020",
+      "date": "2025-10-30",
+      "category": "Entertainment",
+      "merchant": "Amazon Prime Video",
+      "amount": 2008.38,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1021",
+      "date": "2025-10-24",
+      "category": "Utilities",
+      "merchant": "Internet - Airtel Fiber",
+      "amount": 741.17,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1022",
+      "date": "2025-10-14",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 3747.72,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1023",
+      "date": "2025-10-05",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 1135.64,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1024",
+      "date": "2025-10-28",
+      "category": "Travel",
+      "merchant": "Flight Booking",
+      "amount": 3791.12,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1025",
+      "date": "2025-10-14",
+      "category": "Utilities",
+      "merchant": "Water Bill",
+      "amount": 3970.79,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1026",
+      "date": "2025-10-15",
+      "category": "Transportation",
+      "merchant": "Metro Card Recharge",
+      "amount": 1939.02,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1027",
+      "date": "2025-10-04",
+      "category": "Shopping",
+      "merchant": "Amazon",
+      "amount": 3417.4,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1028",
+      "date": "2025-10-14",
+      "category": "Shopping",
+      "merchant": "Flipkart",
+      "amount": 602.18,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1029",
+      "date": "2025-11-04",
+      "category": "Shopping",
+      "merchant": "Myntra",
+      "amount": 2563.02,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1030",
+      "date": "2025-11-25",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 806.55,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1031",
+      "date": "2025-11-16",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 3014.78,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1032",
+      "date": "2025-11-27",
+      "category": "Transportation",
+      "merchant": "Petrol Pump",
+      "amount": 4399.67,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1033",
+      "date": "2025-11-19",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 1242.31,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1034",
+      "date": "2025-11-25",
+      "category": "Transportation",
+      "merchant": "Metro Card Recharge",
+      "amount": 4089.32,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1035",
+      "date": "2025-11-18",
+      "category": "Utilities",
+      "merchant": "Water Bill",
+      "amount": 3315.77,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1036",
+      "date": "2025-11-30",
+      "category": "Shopping",
+      "merchant": "Local Market",
+      "amount": 4823.6,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1037",
+      "date": "2025-11-22",
+      "category": "Entertainment",
+      "merchant": "BookMyShow",
+      "amount": 2025.01,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1038",
+      "date": "2025-11-08",
+      "category": "Travel",
+      "merchant": "IRCTC",
+      "amount": 2284.86,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1039",
+      "date": "2025-11-18",
+      "category": "Transportation",
+      "merchant": "Petrol Pump",
+      "amount": 154.12,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1040",
+      "date": "2025-11-23",
+      "category": "Miscellaneous",
+      "merchant": "ATM Withdrawal",
+      "amount": 85.59,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1041",
+      "date": "2025-11-28",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 4531.83,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1042",
+      "date": "2025-11-16",
+      "category": "Transportation",
+      "merchant": "Ola",
+      "amount": 1428.46,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1043",
+      "date": "2025-11-29",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 3630.6,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1044",
+      "date": "2025-11-16",
+      "category": "Miscellaneous",
+      "merchant": "Gift",
+      "amount": 1252.84,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1045",
+      "date": "2025-11-14",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 529.81,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1046",
+      "date": "2025-11-24",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 2361.77,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1047",
+      "date": "2025-11-11",
+      "category": "Transportation",
+      "merchant": "Uber",
+      "amount": 2042.98,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1048",
+      "date": "2025-11-15",
+      "category": "Entertainment",
+      "merchant": "Spotify",
+      "amount": 991.53,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1049",
+      "date": "2025-11-08",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 1428.8,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1050",
+      "date": "2025-11-21",
+      "category": "Travel",
+      "merchant": "IRCTC",
+      "amount": 534.65,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1051",
+      "date": "2025-11-28",
+      "category": "Food & Dining",
+      "merchant": "Zomato",
+      "amount": 4635.52,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1052",
+      "date": "2025-11-07",
+      "category": "Utilities",
+      "merchant": "Mobile Recharge",
+      "amount": 2453.92,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1053",
+      "date": "2025-11-13",
+      "category": "Food & Dining",
+      "merchant": "Swiggy",
+      "amount": 1925.92,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1054",
+      "date": "2025-11-24",
+      "category": "Travel",
+      "merchant": "Hotel Booking",
+      "amount": 2143.89,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1055",
+      "date": "2025-11-07",
+      "category": "Travel",
+      "merchant": "Flight Booking",
+      "amount": 989.99,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1056",
+      "date": "2025-11-24",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 2733.87,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1057",
+      "date": "2025-11-17",
+      "category": "Food & Dining",
+      "merchant": "Zomato",
+      "amount": 2941.68,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1058",
+      "date": "2025-12-22",
+      "category": "Utilities",
+      "merchant": "Electricity Bill",
+      "amount": 2995.42,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1059",
+      "date": "2025-12-19",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 4710.9,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1060",
+      "date": "2025-12-03",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 246.72,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1061",
+      "date": "2025-12-30",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 2637.77,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1062",
+      "date": "2025-12-13",
+      "category": "Entertainment",
+      "merchant": "BookMyShow",
+      "amount": 1231.5,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1063",
+      "date": "2025-12-25",
+      "category": "Shopping",
+      "merchant": "Local Market",
+      "amount": 1615.08,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1064",
+      "date": "2025-12-19",
+      "category": "Food & Dining",
+      "merchant": "Local Cafe",
+      "amount": 3124.74,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1065",
+      "date": "2025-12-05",
+      "category": "Transportation",
+      "merchant": "Ola",
+      "amount": 2554.13,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1066",
+      "date": "2025-12-06",
+      "category": "Transportation",
+      "merchant": "Ola",
+      "amount": 1879.16,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1067",
+      "date": "2025-12-26",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 3077.8,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1068",
+      "date": "2025-12-22",
+      "category": "Food & Dining",
+      "merchant": "Grocery Store",
+      "amount": 1531.92,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1069",
+      "date": "2025-12-04",
+      "category": "Utilities",
+      "merchant": "Internet - Airtel Fiber",
+      "amount": 621.37,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1070",
+      "date": "2025-12-07",
+      "category": "Utilities",
+      "merchant": "Internet - Airtel Fiber",
+      "amount": 1444.69,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1071",
+      "date": "2025-12-09",
+      "category": "Entertainment",
+      "merchant": "BookMyShow",
+      "amount": 2551.77,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1072",
+      "date": "2025-12-02",
+      "category": "Transportation",
+      "merchant": "Metro Card Recharge",
+      "amount": 4155.27,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1073",
+      "date": "2025-12-09",
+      "category": "Health",
+      "merchant": "Apollo Pharmacy",
+      "amount": 3203.71,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1074",
+      "date": "2025-12-18",
+      "category": "Travel",
+      "merchant": "IRCTC",
+      "amount": 3543.05,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1075",
+      "date": "2025-12-23",
+      "category": "Transportation",
+      "merchant": "Uber",
+      "amount": 4728.0,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1076",
+      "date": "2025-12-19",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 4181.25,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1077",
+      "date": "2026-01-12",
+      "category": "Entertainment",
+      "merchant": "Spotify",
+      "amount": 3351.32,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1078",
+      "date": "2026-01-08",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 4632.53,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1079",
+      "date": "2026-01-24",
+      "category": "Utilities",
+      "merchant": "Mobile Recharge",
+      "amount": 172.69,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1080",
+      "date": "2026-01-26",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 1370.69,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1081",
+      "date": "2026-01-08",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 4300.04,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1082",
+      "date": "2026-01-26",
+      "category": "Travel",
+      "merchant": "Hotel Booking",
+      "amount": 1560.69,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1083",
+      "date": "2026-01-13",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 3317.16,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1084",
+      "date": "2026-01-09",
+      "category": "Shopping",
+      "merchant": "Amazon",
+      "amount": 4836.1,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1085",
+      "date": "2026-01-27",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 3413.61,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1086",
+      "date": "2026-01-09",
+      "category": "Health",
+      "merchant": "Apollo Pharmacy",
+      "amount": 620.94,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1087",
+      "date": "2026-01-20",
+      "category": "Miscellaneous",
+      "merchant": "Gift",
+      "amount": 239.37,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1088",
+      "date": "2026-01-14",
+      "category": "Health",
+      "merchant": "Doctor Consultation",
+      "amount": 3942.82,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1089",
+      "date": "2026-01-19",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 1956.72,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1090",
+      "date": "2026-01-01",
+      "category": "Shopping",
+      "merchant": "Amazon",
+      "amount": 3558.49,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1091",
+      "date": "2026-01-03",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 1852.9,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1092",
+      "date": "2026-01-04",
+      "category": "Miscellaneous",
+      "merchant": "Gift",
+      "amount": 3333.77,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1093",
+      "date": "2026-01-11",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 3351.12,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1094",
+      "date": "2026-01-22",
+      "category": "Shopping",
+      "merchant": "Myntra",
+      "amount": 999.61,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1095",
+      "date": "2026-01-27",
+      "category": "Utilities",
+      "merchant": "Internet - Airtel Fiber",
+      "amount": 2060.07,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1096",
+      "date": "2026-01-26",
+      "category": "Shopping",
+      "merchant": "Flipkart",
+      "amount": 1090.4,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1097",
+      "date": "2026-01-15",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 1645.13,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1098",
+      "date": "2026-01-31",
+      "category": "Entertainment",
+      "merchant": "Amazon Prime Video",
+      "amount": 3978.99,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1099",
+      "date": "2026-01-21",
+      "category": "Transportation",
+      "merchant": "Petrol Pump",
+      "amount": 2601.49,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1100",
+      "date": "2026-02-07",
+      "category": "Entertainment",
+      "merchant": "BookMyShow",
+      "amount": 1161.97,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1101",
+      "date": "2026-02-16",
+      "category": "Food & Dining",
+      "merchant": "Zomato",
+      "amount": 1261.97,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1102",
+      "date": "2026-02-21",
+      "category": "Transportation",
+      "merchant": "Metro Card Recharge",
+      "amount": 2101.48,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1103",
+      "date": "2026-02-08",
+      "category": "Entertainment",
+      "merchant": "Amazon Prime Video",
+      "amount": 2497.17,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1104",
+      "date": "2026-02-08",
+      "category": "Food & Dining",
+      "merchant": "Zomato",
+      "amount": 3903.18,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1105",
+      "date": "2026-02-08",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 298.58,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1106",
+      "date": "2026-02-22",
+      "category": "Travel",
+      "merchant": "Flight Booking",
+      "amount": 4017.01,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1107",
+      "date": "2026-02-15",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 4752.7,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1108",
+      "date": "2026-02-18",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 4161.32,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1109",
+      "date": "2026-02-25",
+      "category": "Utilities",
+      "merchant": "Mobile Recharge",
+      "amount": 2277.85,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1110",
+      "date": "2026-02-09",
+      "category": "Shopping",
+      "merchant": "Local Market",
+      "amount": 3152.4,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1111",
+      "date": "2026-02-11",
+      "category": "Transportation",
+      "merchant": "Petrol Pump",
+      "amount": 1210.74,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1112",
+      "date": "2026-02-08",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 734.95,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1113",
+      "date": "2026-02-14",
+      "category": "Utilities",
+      "merchant": "Water Bill",
+      "amount": 367.93,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1114",
+      "date": "2026-02-07",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 2108.08,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1115",
+      "date": "2026-02-25",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 4290.82,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1116",
+      "date": "2026-02-12",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 79.19,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1117",
+      "date": "2026-02-24",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 2714.19,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1118",
+      "date": "2026-02-09",
+      "category": "Miscellaneous",
+      "merchant": "ATM Withdrawal",
+      "amount": 2466.74,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1119",
+      "date": "2026-02-22",
+      "category": "Travel",
+      "merchant": "Flight Booking",
+      "amount": 1974.84,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1120",
+      "date": "2026-02-20",
+      "category": "Utilities",
+      "merchant": "Mobile Recharge",
+      "amount": 4601.73,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1121",
+      "date": "2026-02-22",
+      "category": "Food & Dining",
+      "merchant": "Local Cafe",
+      "amount": 2979.87,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1122",
+      "date": "2026-02-15",
+      "category": "Transportation",
+      "merchant": "Metro Card Recharge",
+      "amount": 721.71,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1123",
+      "date": "2026-02-07",
+      "category": "Food & Dining",
+      "merchant": "Starbucks",
+      "amount": 1926.56,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1124",
+      "date": "2026-02-13",
+      "category": "Health",
+      "merchant": "Gym Membership",
+      "amount": 3818.09,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1125",
+      "date": "2026-02-16",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 4182.81,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1126",
+      "date": "2026-02-12",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 4999.54,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1127",
+      "date": "2026-02-08",
+      "category": "Transportation",
+      "merchant": "Uber",
+      "amount": 3783.45,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1128",
+      "date": "2026-02-05",
+      "category": "Food & Dining",
+      "merchant": "Grocery Store",
+      "amount": 804.29,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1129",
+      "date": "2026-02-09",
+      "category": "Transportation",
+      "merchant": "Ola",
+      "amount": 2351.92,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1130",
+      "date": "2026-03-04",
+      "category": "Transportation",
+      "merchant": "Ola",
+      "amount": 4825.37,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1131",
+      "date": "2026-03-30",
+      "category": "Food & Dining",
+      "merchant": "Starbucks",
+      "amount": 2900.19,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1132",
+      "date": "2026-03-23",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 426.18,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1133",
+      "date": "2026-03-20",
+      "category": "Transportation",
+      "merchant": "Petrol Pump",
+      "amount": 4258.95,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1134",
+      "date": "2026-03-14",
+      "category": "Miscellaneous",
+      "merchant": "ATM Withdrawal",
+      "amount": 1768.66,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1135",
+      "date": "2026-03-14",
+      "category": "Transportation",
+      "merchant": "Petrol Pump",
+      "amount": 112.63,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1136",
+      "date": "2026-03-21",
+      "category": "Transportation",
+      "merchant": "Metro Card Recharge",
+      "amount": 4805.9,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1137",
+      "date": "2026-03-17",
+      "category": "Utilities",
+      "merchant": "Mobile Recharge",
+      "amount": 921.88,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1138",
+      "date": "2026-03-15",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 3884.48,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1139",
+      "date": "2026-03-08",
+      "category": "Miscellaneous",
+      "merchant": "Gift",
+      "amount": 1645.41,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1140",
+      "date": "2026-03-15",
+      "category": "Shopping",
+      "merchant": "Local Market",
+      "amount": 1257.12,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1141",
+      "date": "2026-03-01",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 1926.0,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1142",
+      "date": "2026-03-12",
+      "category": "Health",
+      "merchant": "Apollo Pharmacy",
+      "amount": 2463.37,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1143",
+      "date": "2026-03-23",
+      "category": "Health",
+      "merchant": "Gym Membership",
+      "amount": 4407.58,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1144",
+      "date": "2026-03-07",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 2607.3,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1145",
+      "date": "2026-03-25",
+      "category": "Entertainment",
+      "merchant": "Amazon Prime Video",
+      "amount": 2468.46,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1146",
+      "date": "2026-03-15",
+      "category": "Travel",
+      "merchant": "IRCTC",
+      "amount": 3573.62,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1147",
+      "date": "2026-03-23",
+      "category": "Transportation",
+      "merchant": "Petrol Pump",
+      "amount": 1146.9,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1148",
+      "date": "2026-03-17",
+      "category": "Shopping",
+      "merchant": "Flipkart",
+      "amount": 2392.64,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1149",
+      "date": "2026-03-15",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 1791.46,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1150",
+      "date": "2026-03-24",
+      "category": "Shopping",
+      "merchant": "Flipkart",
+      "amount": 1191.16,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1151",
+      "date": "2026-03-31",
+      "category": "Health",
+      "merchant": "Apollo Pharmacy",
+      "amount": 3727.26,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1152",
+      "date": "2026-03-09",
+      "category": "Entertainment",
+      "merchant": "Spotify",
+      "amount": 3706.09,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1153",
+      "date": "2026-03-27",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 4903.53,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1154",
+      "date": "2026-03-10",
+      "category": "Shopping",
+      "merchant": "Myntra",
+      "amount": 1836.36,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1155",
+      "date": "2026-03-02",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 1407.84,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1156",
+      "date": "2026-03-25",
+      "category": "Shopping",
+      "merchant": "Myntra",
+      "amount": 3207.45,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1157",
+      "date": "2026-03-16",
+      "category": "Transportation",
+      "merchant": "Uber",
+      "amount": 2891.62,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1158",
+      "date": "2026-03-02",
+      "category": "Travel",
+      "merchant": "Hotel Booking",
+      "amount": 962.6,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1159",
+      "date": "2026-04-21",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 416.71,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1160",
+      "date": "2026-04-10",
+      "category": "Utilities",
+      "merchant": "Water Bill",
+      "amount": 4065.15,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1161",
+      "date": "2026-04-14",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 2812.46,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1162",
+      "date": "2026-04-17",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 1167.15,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1163",
+      "date": "2026-04-19",
+      "category": "Travel",
+      "merchant": "Hotel Booking",
+      "amount": 1521.9,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1164",
+      "date": "2026-04-24",
+      "category": "Shopping",
+      "merchant": "Amazon",
+      "amount": 3067.67,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1165",
+      "date": "2026-04-03",
+      "category": "Entertainment",
+      "merchant": "Spotify",
+      "amount": 1360.0,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1166",
+      "date": "2026-04-06",
+      "category": "Entertainment",
+      "merchant": "Spotify",
+      "amount": 2782.36,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1167",
+      "date": "2026-04-16",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 3462.39,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1168",
+      "date": "2026-04-10",
+      "category": "Food & Dining",
+      "merchant": "Swiggy",
+      "amount": 1476.12,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1169",
+      "date": "2026-04-26",
+      "category": "Transportation",
+      "merchant": "Ola",
+      "amount": 4623.36,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1170",
+      "date": "2026-04-08",
+      "category": "Entertainment",
+      "merchant": "Amazon Prime Video",
+      "amount": 618.14,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1171",
+      "date": "2026-04-06",
+      "category": "Shopping",
+      "merchant": "Myntra",
+      "amount": 403.48,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1172",
+      "date": "2026-04-30",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 4129.99,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1173",
+      "date": "2026-04-10",
+      "category": "Travel",
+      "merchant": "Flight Booking",
+      "amount": 2370.05,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1174",
+      "date": "2026-04-20",
+      "category": "Shopping",
+      "merchant": "Local Market",
+      "amount": 2216.91,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1175",
+      "date": "2026-04-01",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 3038.38,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1176",
+      "date": "2026-04-22",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 4997.88,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1177",
+      "date": "2026-04-06",
+      "category": "Miscellaneous",
+      "merchant": "ATM Withdrawal",
+      "amount": 3827.39,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1178",
+      "date": "2026-05-16",
+      "category": "Utilities",
+      "merchant": "Mobile Recharge",
+      "amount": 3192.18,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1179",
+      "date": "2026-05-11",
+      "category": "Travel",
+      "merchant": "Hotel Booking",
+      "amount": 2071.32,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1180",
+      "date": "2026-05-16",
+      "category": "Utilities",
+      "merchant": "Internet - Airtel Fiber",
+      "amount": 2087.64,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1181",
+      "date": "2026-05-11",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 2301.39,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1182",
+      "date": "2026-05-13",
+      "category": "Health",
+      "merchant": "Apollo Pharmacy",
+      "amount": 4852.41,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1183",
+      "date": "2026-05-02",
+      "category": "Food & Dining",
+      "merchant": "Grocery Store",
+      "amount": 2336.78,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1184",
+      "date": "2026-05-16",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 3132.04,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1185",
+      "date": "2026-05-05",
+      "category": "Food & Dining",
+      "merchant": "Swiggy",
+      "amount": 1371.93,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1186",
+      "date": "2026-05-01",
+      "category": "Travel",
+      "merchant": "IRCTC",
+      "amount": 2449.32,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1187",
+      "date": "2026-05-01",
+      "category": "Entertainment",
+      "merchant": "Spotify",
+      "amount": 1588.21,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1188",
+      "date": "2026-05-27",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 1162.27,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1189",
+      "date": "2026-05-05",
+      "category": "Travel",
+      "merchant": "Flight Booking",
+      "amount": 3256.16,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1190",
+      "date": "2026-05-16",
+      "category": "Shopping",
+      "merchant": "Flipkart",
+      "amount": 2106.68,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1191",
+      "date": "2026-05-13",
+      "category": "Entertainment",
+      "merchant": "Amazon Prime Video",
+      "amount": 2778.76,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1192",
+      "date": "2026-05-05",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 3744.15,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1193",
+      "date": "2026-05-26",
+      "category": "Shopping",
+      "merchant": "Local Market",
+      "amount": 1732.38,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1194",
+      "date": "2026-05-10",
+      "category": "Shopping",
+      "merchant": "Amazon",
+      "amount": 1450.05,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1195",
+      "date": "2026-05-05",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 2473.72,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1196",
+      "date": "2026-05-18",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 1758.36,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1197",
+      "date": "2026-05-28",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 4667.62,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1198",
+      "date": "2026-05-25",
+      "category": "Entertainment",
+      "merchant": "Amazon Prime Video",
+      "amount": 1206.13,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1199",
+      "date": "2026-05-23",
+      "category": "Food & Dining",
+      "merchant": "Starbucks",
+      "amount": 3736.29,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1200",
+      "date": "2026-06-05",
+      "category": "Utilities",
+      "merchant": "Mobile Recharge",
+      "amount": 4825.88,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1201",
+      "date": "2026-06-28",
+      "category": "Miscellaneous",
+      "merchant": "Gift",
+      "amount": 4355.02,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1202",
+      "date": "2026-06-05",
+      "category": "Transportation",
+      "merchant": "Metro Card Recharge",
+      "amount": 125.97,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1203",
+      "date": "2026-06-09",
+      "category": "Utilities",
+      "merchant": "Electricity Bill",
+      "amount": 2373.98,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1204",
+      "date": "2026-06-03",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 2017.54,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1205",
+      "date": "2026-06-21",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 4772.99,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1206",
+      "date": "2026-06-08",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 3106.42,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1207",
+      "date": "2026-06-04",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 2198.16,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1208",
+      "date": "2026-06-29",
+      "category": "Travel",
+      "merchant": "Flight Booking",
+      "amount": 3485.31,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1209",
+      "date": "2026-06-10",
+      "category": "Food & Dining",
+      "merchant": "Starbucks",
+      "amount": 3990.91,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1210",
+      "date": "2026-06-17",
+      "category": "Health",
+      "merchant": "Gym Membership",
+      "amount": 770.57,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1211",
+      "date": "2026-06-06",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 3972.97,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1212",
+      "date": "2026-06-08",
+      "category": "Transportation",
+      "merchant": "Metro Card Recharge",
+      "amount": 3117.57,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1213",
+      "date": "2026-06-21",
+      "category": "Miscellaneous",
+      "merchant": "ATM Withdrawal",
+      "amount": 1199.33,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1214",
+      "date": "2026-06-29",
+      "category": "Travel",
+      "merchant": "Hotel Booking",
+      "amount": 3350.86,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1215",
+      "date": "2026-06-12",
+      "category": "Shopping",
+      "merchant": "Myntra",
+      "amount": 415.62,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1216",
+      "date": "2026-06-15",
+      "category": "Shopping",
+      "merchant": "Local Market",
+      "amount": 3467.05,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1217",
+      "date": "2026-06-04",
+      "category": "Entertainment",
+      "merchant": "Amazon Prime Video",
+      "amount": 4274.01,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1218",
+      "date": "2026-06-23",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 2895.32,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1219",
+      "date": "2026-06-19",
+      "category": "Food & Dining",
+      "merchant": "Local Cafe",
+      "amount": 1408.68,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1220",
+      "date": "2026-06-29",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 2508.8,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1221",
+      "date": "2026-06-07",
+      "category": "Entertainment",
+      "merchant": "BookMyShow",
+      "amount": 1134.07,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1222",
+      "date": "2026-06-29",
+      "category": "Shopping",
+      "merchant": "Myntra",
+      "amount": 3159.83,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1223",
+      "date": "2026-06-12",
+      "category": "Shopping",
+      "merchant": "Local Market",
+      "amount": 215.15,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1224",
+      "date": "2026-06-14",
+      "category": "Transportation",
+      "merchant": "Petrol Pump",
+      "amount": 1667.26,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1225",
+      "date": "2026-06-29",
+      "category": "Entertainment",
+      "merchant": "Spotify",
+      "amount": 3943.24,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1226",
+      "date": "2026-06-09",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 4160.84,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1227",
+      "date": "2026-06-15",
+      "category": "Shopping",
+      "merchant": "Flipkart",
+      "amount": 4030.95,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1228",
+      "date": "2026-07-13",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 497.0,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1229",
+      "date": "2026-07-22",
+      "category": "Shopping",
+      "merchant": "Amazon",
+      "amount": 2301.19,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1230",
+      "date": "2026-07-31",
+      "category": "Miscellaneous",
+      "merchant": "Gift",
+      "amount": 4120.97,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1231",
+      "date": "2026-07-20",
+      "category": "Transportation",
+      "merchant": "Ola",
+      "amount": 2383.81,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1232",
+      "date": "2026-07-03",
+      "category": "Health",
+      "merchant": "Doctor Consultation",
+      "amount": 1145.77,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1233",
+      "date": "2026-07-02",
+      "category": "Shopping",
+      "merchant": "Local Market",
+      "amount": 627.55,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1234",
+      "date": "2026-07-08",
+      "category": "Shopping",
+      "merchant": "Local Market",
+      "amount": 624.8,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1235",
+      "date": "2026-07-22",
+      "category": "Utilities",
+      "merchant": "Mobile Recharge",
+      "amount": 2295.54,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1236",
+      "date": "2026-07-21",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 4432.8,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1237",
+      "date": "2026-07-31",
+      "category": "Travel",
+      "merchant": "IRCTC",
+      "amount": 2070.17,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1238",
+      "date": "2026-07-15",
+      "category": "Food & Dining",
+      "merchant": "Starbucks",
+      "amount": 1125.48,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1239",
+      "date": "2026-07-12",
+      "category": "Health",
+      "merchant": "Apollo Pharmacy",
+      "amount": 4905.59,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1240",
+      "date": "2026-07-07",
+      "category": "Health",
+      "merchant": "Apollo Pharmacy",
+      "amount": 2020.79,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1241",
+      "date": "2026-07-21",
+      "category": "Travel",
+      "merchant": "Flight Booking",
+      "amount": 3330.71,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1242",
+      "date": "2026-07-08",
+      "category": "Food & Dining",
+      "merchant": "Zomato",
+      "amount": 3944.63,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1243",
+      "date": "2026-07-25",
+      "category": "Miscellaneous",
+      "merchant": "ATM Withdrawal",
+      "amount": 389.62,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1244",
+      "date": "2026-07-08",
+      "category": "Entertainment",
+      "merchant": "Spotify",
+      "amount": 4074.61,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1245",
+      "date": "2026-07-05",
+      "category": "Utilities",
+      "merchant": "Electricity Bill",
+      "amount": 1422.51,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1246",
+      "date": "2026-07-04",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 4002.64,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1247",
+      "date": "2026-07-26",
+      "category": "Utilities",
+      "merchant": "Electricity Bill",
+      "amount": 1823.3,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1248",
+      "date": "2026-07-09",
+      "category": "Miscellaneous",
+      "merchant": "Gift",
+      "amount": 128.12,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1249",
+      "date": "2026-07-24",
+      "category": "Utilities",
+      "merchant": "Mobile Recharge",
+      "amount": 2654.12,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1250",
+      "date": "2026-07-17",
+      "category": "Travel",
+      "merchant": "Hotel Booking",
+      "amount": 3901.18,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1251",
+      "date": "2026-07-31",
+      "category": "Transportation",
+      "merchant": "Metro Card Recharge",
+      "amount": 2544.0,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1252",
+      "date": "2026-07-21",
+      "category": "Food & Dining",
+      "merchant": "Grocery Store",
+      "amount": 1543.07,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1253",
+      "date": "2026-07-14",
+      "category": "Food & Dining",
+      "merchant": "Local Cafe",
+      "amount": 4244.13,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1254",
+      "date": "2026-07-03",
+      "category": "Travel",
+      "merchant": "IRCTC",
+      "amount": 4553.02,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1255",
+      "date": "2026-07-05",
+      "category": "Health",
+      "merchant": "Doctor Consultation",
+      "amount": 784.25,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1256",
+      "date": "2026-08-17",
+      "category": "Health",
+      "merchant": "Gym Membership",
+      "amount": 4973.41,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1257",
+      "date": "2026-08-04",
+      "category": "Travel",
+      "merchant": "IRCTC",
+      "amount": 3046.86,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1258",
+      "date": "2026-08-29",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 2178.85,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1259",
+      "date": "2026-08-13",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 4145.73,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1260",
+      "date": "2026-08-22",
+      "category": "Transportation",
+      "merchant": "Petrol Pump",
+      "amount": 2162.48,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1261",
+      "date": "2026-08-16",
+      "category": "Health",
+      "merchant": "Apollo Pharmacy",
+      "amount": 3449.76,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1262",
+      "date": "2026-08-04",
+      "category": "Transportation",
+      "merchant": "Uber",
+      "amount": 511.49,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1263",
+      "date": "2026-08-18",
+      "category": "Utilities",
+      "merchant": "Electricity Bill",
+      "amount": 2953.0,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1264",
+      "date": "2026-08-12",
+      "category": "Health",
+      "merchant": "Doctor Consultation",
+      "amount": 655.04,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1265",
+      "date": "2026-08-12",
+      "category": "Food & Dining",
+      "merchant": "Starbucks",
+      "amount": 3022.03,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1266",
+      "date": "2026-08-22",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 1103.06,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1267",
+      "date": "2026-08-18",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 1783.06,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1268",
+      "date": "2026-08-26",
+      "category": "Transportation",
+      "merchant": "Petrol Pump",
+      "amount": 2891.8,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1269",
+      "date": "2026-08-22",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 3064.52,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1270",
+      "date": "2026-08-25",
+      "category": "Food & Dining",
+      "merchant": "Swiggy",
+      "amount": 1402.69,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1271",
+      "date": "2026-08-28",
+      "category": "Health",
+      "merchant": "Gym Membership",
+      "amount": 80.22,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1272",
+      "date": "2026-08-05",
+      "category": "Miscellaneous",
+      "merchant": "Donation",
+      "amount": 2033.88,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1273",
+      "date": "2026-08-15",
+      "category": "Transportation",
+      "merchant": "Ola",
+      "amount": 1912.16,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1274",
+      "date": "2026-08-11",
+      "category": "Utilities",
+      "merchant": "Internet - Airtel Fiber",
+      "amount": 1592.6,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1275",
+      "date": "2026-08-05",
+      "category": "Miscellaneous",
+      "merchant": "ATM Withdrawal",
+      "amount": 4422.54,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1276",
+      "date": "2026-08-09",
+      "category": "Miscellaneous",
+      "merchant": "ATM Withdrawal",
+      "amount": 3386.15,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1277",
+      "date": "2026-08-14",
+      "category": "Rent & Housing",
+      "merchant": "Maintenance Fee",
+      "amount": 3055.03,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1278",
+      "date": "2026-08-04",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 1758.61,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1279",
+      "date": "2026-08-10",
+      "category": "Miscellaneous",
+      "merchant": "Gift",
+      "amount": 2658.32,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1280",
+      "date": "2026-08-02",
+      "category": "Entertainment",
+      "merchant": "Amazon Prime Video",
+      "amount": 4923.01,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1281",
+      "date": "2026-08-25",
+      "category": "Entertainment",
+      "merchant": "BookMyShow",
+      "amount": 4729.35,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1282",
+      "date": "2026-08-01",
+      "category": "Shopping",
+      "merchant": "Flipkart",
+      "amount": 1674.21,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1283",
+      "date": "2026-08-18",
+      "category": "Rent & Housing",
+      "merchant": "Monthly Rent",
+      "amount": 689.47,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1284",
+      "date": "2026-08-28",
+      "category": "Education",
+      "merchant": "Book Purchase",
+      "amount": 406.77,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1285",
+      "date": "2026-09-13",
+      "category": "Health",
+      "merchant": "Doctor Consultation",
+      "amount": 2174.96,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1286",
+      "date": "2026-09-11",
+      "category": "Shopping",
+      "merchant": "Amazon",
+      "amount": 2054.91,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1287",
+      "date": "2026-09-30",
+      "category": "Miscellaneous",
+      "merchant": "Gift",
+      "amount": 4168.53,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1288",
+      "date": "2026-09-08",
+      "category": "Transportation",
+      "merchant": "Metro Card Recharge",
+      "amount": 4230.2,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1289",
+      "date": "2026-09-13",
+      "category": "Miscellaneous",
+      "merchant": "Gift",
+      "amount": 2643.61,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1290",
+      "date": "2026-09-06",
+      "category": "Health",
+      "merchant": "Apollo Pharmacy",
+      "amount": 1698.69,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1291",
+      "date": "2026-09-07",
+      "category": "Education",
+      "merchant": "Udemy Course",
+      "amount": 2676.49,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1292",
+      "date": "2026-09-21",
+      "category": "Health",
+      "merchant": "Doctor Consultation",
+      "amount": 4793.21,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1293",
+      "date": "2026-09-07",
+      "category": "Entertainment",
+      "merchant": "Netflix",
+      "amount": 774.9,
+      "currency": "INR",
+      "paymentMode": "Credit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1294",
+      "date": "2026-09-21",
+      "category": "Miscellaneous",
+      "merchant": "ATM Withdrawal",
+      "amount": 3813.07,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1295",
+      "date": "2026-09-19",
+      "category": "Utilities",
+      "merchant": "Mobile Recharge",
+      "amount": 2346.57,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1296",
+      "date": "2026-09-19",
+      "category": "Travel",
+      "merchant": "IRCTC",
+      "amount": 4624.56,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1297",
+      "date": "2026-09-15",
+      "category": "Health",
+      "merchant": "Doctor Consultation",
+      "amount": 1614.89,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1298",
+      "date": "2026-09-26",
+      "category": "Travel",
+      "merchant": "Hotel Booking",
+      "amount": 3175.36,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1299",
+      "date": "2026-09-03",
+      "category": "Miscellaneous",
+      "merchant": "ATM Withdrawal",
+      "amount": 1792.11,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1300",
+      "date": "2026-09-12",
+      "category": "Travel",
+      "merchant": "Hotel Booking",
+      "amount": 236.16,
+      "currency": "INR",
+      "paymentMode": "Debit Card",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1301",
+      "date": "2026-09-17",
+      "category": "Transportation",
+      "merchant": "Uber",
+      "amount": 3094.29,
+      "currency": "INR",
+      "paymentMode": "Net Banking",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1302",
+      "date": "2026-09-26",
+      "category": "Travel",
+      "merchant": "IRCTC",
+      "amount": 2793.87,
+      "currency": "INR",
+      "paymentMode": "UPI",
+      "notes": ""
+    },
+    {
+      "expenseId": "EXP1303",
+      "date": "2026-09-11",
+      "category": "Travel",
+      "merchant": "IRCTC",
+      "amount": 3276.6,
+      "currency": "INR",
+      "paymentMode": "Cash",
+      "notes": ""
+    }
+  ]
+}

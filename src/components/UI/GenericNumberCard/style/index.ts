@@ -14,7 +14,7 @@ export const icon = cva("p-2 rounded-xl", {
   },
 });
 
-export const performanceText = cva("text-body1 font-semibold", {
+export const performanceText = cva("text-body1 font-semibold min-w-18", {
   variants: {
     colorTone: {
       success: "text-success",
