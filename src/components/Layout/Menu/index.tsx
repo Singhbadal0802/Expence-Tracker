@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   LayoutDashboard,
   WalletCards,
@@ -18,6 +18,7 @@ import {
 import data from '@/utilities/expenceData.json';
 
 const MenuBar = () => {
+  const [isOnLoginPage, setIsOnLoginPage] = useState<boolean>(false);
   const MenuOptions = [
     {
       icon: LayoutDashboard,
@@ -82,11 +83,18 @@ const MenuBar = () => {
   ];
 
   useEffect(()=>{
+    if(typeof window !== "undefined"){
+      setIsOnLoginPage(window.location.href.includes('login'));
+    }
+  },[])
+
+  useEffect(()=>{
     sessionStorage.setItem('userData', JSON.stringify(data));
   },[])
 
   return (
-    <nav className="h-[95vh] min-w-68 max-w-72 flex-col gap-md border-r-4 border-gray-200 hidden md:flex">
+    <>
+    {!isOnLoginPage && <nav className="h-[95vh] min-w-68 max-w-72 flex-col gap-md border-r-4 border-gray-200 hidden md:flex">
         <div className="flex group text-center font-bold text-heading3 gap-4 items-center py-4"><img src="/assests/favicon.png" className="w-12 h-12 p-1 bg-primary rounded-lg"/>Expence Tracker</div>
       {MenuOptions.map((navlink) => {
         const Icon = navlink.icon;
@@ -103,7 +111,8 @@ const MenuBar = () => {
           </a>
         );
       })}
-    </nav>
+    </nav>}
+    </>
   );
 };
 

@@ -174,8 +174,8 @@ const DashboardCards = ({ selectedMonth }: DashboardCardsPorps) => {
       ))}
     </div>
     <div className="flex flex-col md:flex-row gap-8 px-4">
-      <div className="flex flex-1 flex-col rounded-xl border border-3 border-gray-200 min-w-[200px] shadow-lg transition-all duration-400 w-full lg:w-[50%] p-4"><BarGraph/></div>
-      <div className="flex flex-1 flex-col rounded-xl border border-3 border-gray-200 min-w-[200px] shadow-lg transition-all duration-400 w-full lg:w-[50%] h-20 p-4"></div>
+      {/* <div className="flex flex-1 flex-col rounded-xl border border-3 border-gray-200 min-w-[200px] shadow-lg transition-all duration-400 w-full lg:w-[50%] p-4"><BarGraph/></div>
+      <div className="flex flex-1 flex-col rounded-xl border border-3 border-gray-200 min-w-[200px] shadow-lg transition-all duration-400 w-full lg:w-[50%] h-20 p-4"></div> */}
       </div>
       </>
   );
