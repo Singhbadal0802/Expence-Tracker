@@ -11,6 +11,12 @@
   --warning: #F59E0B;
   --danger: #EF4444;
   --surface: #F3F4F6;
+  --not-convertable : #000;
+  --opposite : #fff;
+
+  /*wallpapers*/
+  --light : url(/assests/graph_wallpaper.jpg);
+  --dark  : url(/assests/black_graph.jpg);
 
   /* Typography - Font Sizes */
   --text-heading1: 32px;
@@ -37,6 +43,11 @@
   --color-warning: var(--warning);
   --color-danger: var(--danger);
   --color-surface: var(--surface);
+  --color-not-convertable: var(--not-convertable);
+  --color-opposite: var(--opposite);
+
+  --background-image-light: var(--light);
+  --background-image-dark: var(--dark);
 
   /* Typography */
   --text-heading1: var(--text-heading1);
@@ -62,6 +73,10 @@
     --foreground: #F3F4F6;
 
     --primary: #63f1f1;
+    --not-convertable: #000;
+    --opposite : #000;
+    --dark : url(/assests/graph_wallpaper.jpg);
+    --light  : url(/assests/black_graph.jpg);
   }
 }
 

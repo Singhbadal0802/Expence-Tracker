@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
 export const brandPrimary = cva(
-  "rounded-lg px-8 py-3 text-surface",
+  "rounded-lg px-8 py-3 text-surface cursor-pointer",
   {
     variants: {
       colorTone: {
@@ -17,7 +17,7 @@ export const brandPrimary = cva(
   },
 );
 
-export const brandSecondary = cva("border border-2 rounded-lg px-8 py-3", {
+export const brandSecondary = cva("border border-2 rounded-lg px-8 py-3 cursor-pointer", {
   variants: {
     colorTone: {
       primary: "bg-primary/10 border-primary text-primary",

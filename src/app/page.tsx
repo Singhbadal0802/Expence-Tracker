@@ -8,7 +8,7 @@ export default function Home() {
   const [selectedMonth, setSelectedMonth] = useState<string>(currentMonth);
 
   return (
-    <main className="flex flex-1 flex-col gap-4">
+    <main className="flex flex-1 flex-col gap-4 p-4">
       <div className="flex flex-row w-full h-max justify-between items-center mb-8">
         <div data-testid="greting-section" className="flex">
           <div className="flex flex-col">

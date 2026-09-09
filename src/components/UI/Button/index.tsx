@@ -7,13 +7,18 @@ const Button = ({
   variant,
   buttonLabel = '',
   onClick,
-  tone
+  tone,
+  customClass = ''
 } : ButtonProps) => {
   return (
-    <button className={cn({
+    <button 
+    className={cn({
       [brandPrimary({colorTone : tone})] : variant === "brand-primary",
       [brandSecondary({colorTone : tone})] : variant === "brand-secondary",
-    })}>
+      [customClass] : customClass
+    })}
+    onClick={onClick}
+    >
       {buttonLabel}
     </button>
   )

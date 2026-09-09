@@ -3,4 +3,5 @@ export interface ButtonProps {
   buttonLabel: string;
   onClick : () => void;
   tone : "primary" | "success" | "warning" | "danger";
+  customClass? : string;
 }

@@ -24,7 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-row p-4 gap-8">
+      <body className="min-h-full flex flex-row gap-8">
         <MenuBar />
         {children}
       </body>
