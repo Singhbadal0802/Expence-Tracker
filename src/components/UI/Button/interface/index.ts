@@ -4,4 +4,5 @@ export interface ButtonProps {
   onClick : () => void;
   tone : "primary" | "success" | "warning" | "danger";
   customClass? : string;
+  isLoading? : boolean;
 }

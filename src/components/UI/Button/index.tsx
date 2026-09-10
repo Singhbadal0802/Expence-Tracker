@@ -1,14 +1,16 @@
 import React from 'react'
 import { ButtonProps } from './interface'
 import { brandPrimary, brandSecondary } from './style'
-import { cn } from '@/utilities/utility'
+import { cn } from '@/utilities/utility';
+import { LoaderCircle } from 'lucide-react';
 
 const Button = ({
   variant,
   buttonLabel = '',
   onClick,
   tone,
-  customClass = ''
+  customClass = '',
+  isLoading = false,
 } : ButtonProps) => {
   return (
     <button 
@@ -17,9 +19,9 @@ const Button = ({
       [brandSecondary({colorTone : tone})] : variant === "brand-secondary",
       [customClass] : customClass
     })}
-    onClick={onClick}
+    onClick={() => {onClick()}}
     >
-      {buttonLabel}
+      {isLoading ? <LoaderCircle className='animate-spin'/> : buttonLabel}
     </button>
   )
 }
