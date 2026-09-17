@@ -15,7 +15,8 @@
   --opposite : #fff;
 
   /*wallpapers*/
-  --light : url(/assests/graph_wallpaper.jpg);
+  /* --light : url(/assests/graph_wallpaper.jpg); */
+  --light : url(/assests/black_graph.jpg);
   --dark  : url(/assests/black_graph.jpg);
 
   /* Typography - Font Sizes */

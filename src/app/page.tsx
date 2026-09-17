@@ -6,6 +6,19 @@ import DashboardCards from "@/components/MFA/DashBoardCards";
 export default function Home() {
   const currentMonth = new Date().toISOString().slice(0, 7);
   const [selectedMonth, setSelectedMonth] = useState<string>(currentMonth);
+  const [userDetails, setUserDetails] = useState<any>(null);
+  const [userInitials, setUserInitials] = useState<string>("");
+  useEffect(() => {
+    const userDetails = sessionStorage.getItem("userDetails");
+    if (userDetails) {
+      setUserDetails(JSON.parse(userDetails));
+      const initialsArr = JSON.parse(userDetails)?.name
+        .split(" ");
+      
+      const initials = `${initialsArr[0][0]}${initialsArr[initialsArr.length - 1][0]}`;
+      setUserInitials(initials);
+    }
+  }, []);
 
   return (
     <main className="flex flex-1 flex-col gap-4 p-4">
@@ -14,7 +27,7 @@ export default function Home() {
           <div className="flex flex-col">
             <h2 className="text-heading2 lg:text-heading1 font-bold">Dashboard</h2>
             <p className="hidden md:block text-gray-600 text-body1 font-regular">
-              Welcome back, Badal👋
+              {userDetails?.name ? `Welcome back, ${userDetails?.name ?? ''}👋` : 'Join us to track yourself...😊'}
             </p>
           </div>
         </div>
@@ -25,10 +38,11 @@ export default function Home() {
             <a href="/notifications"><Bell className="rounded-full border border-3 border-gray-300 p-2 w-10 h-10" /></a>
             <span className="absolute top-2 right-2 bg-red-600/80 w-2 h-2 rounded-full" />
           </div>
-          <img
+          {/* <img
             src="/assests/favicon.png"
             className="w-10 h-10 p-1 bg-primary rounded-full"
-          />
+          /> */}
+        {userInitials && <p className="font-bold text-heading2 text-not-convertable w-10 h-10 p-1 bg-primary rounded-full">{userInitials}</p>}
         </div>
       </div>
         <DashboardCards selectedMonth={selectedMonth} />

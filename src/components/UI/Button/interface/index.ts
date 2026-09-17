@@ -5,4 +5,5 @@ export interface ButtonProps {
   tone : "primary" | "success" | "warning" | "danger";
   customClass? : string;
   isLoading? : boolean;
+  disabled? : boolean;
 }

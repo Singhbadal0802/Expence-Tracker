@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import {
   LayoutDashboard,
   WalletCards,
@@ -16,9 +17,16 @@ import {
   PlusCircle,
 } from "lucide-react";
 import data from '@/utilities/expenceData.json';
+import LogoutModal from "../LogoutModal";
 
 const MenuBar = () => {
   const [isOnLoginPage, setIsOnLoginPage] = useState<boolean>(false);
+  const HIDE_MENU_OPTIONS = [
+    "login",
+    "register",
+  ];
+  const pathname = usePathname();
+  if(HIDE_MENU_OPTIONS.includes(pathname)) return null;
   const MenuOptions = [
     {
       icon: LayoutDashboard,
@@ -94,6 +102,7 @@ const MenuBar = () => {
 
   return (
     <>
+    {!isOnLoginPage && <LogoutModal/>}
     {!isOnLoginPage && <nav className="h-[95vh] min-w-68 max-w-72 flex-col gap-md border-r-4 border-gray-200 hidden md:flex  p-4">
         <div className="flex group text-center font-bold text-heading3 gap-4 items-center py-4"><img src="/assests/favicon.png" className="w-12 h-12 p-1 bg-primary rounded-lg"/>Expence Tracker</div>
       {MenuOptions.map((navlink) => {

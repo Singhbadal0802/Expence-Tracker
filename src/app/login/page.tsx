@@ -1,76 +1,141 @@
-"use client"
+"use client";
 import Button from "@/components/UI/Button";
-import React, { useState } from "react";
-import { LoaderCircle  } from 'lucide-react';
+import { useEffect, useState } from "react";
 
 const Login = () => {
-    const [stateValue, setStateValue] = useState<"login" | "register">("register");
-    const [loginEmailValue, setLoginEmailValue] = useState<string>('');
-    const [loginPassword, setLoginPassword] = useState<string>('');
-    const [isLoading, setIsLoading] = useState<boolean>(false);
-    const handleLonginSubmit = async() =>{
-      if(loginEmailValue && loginPassword){
-        setIsLoading(true);
-        try{
+  const [stateValue, setStateValue] = useState<"login" | "register">(
+    "register",
+  );
+  const [loginEmailValue, setLoginEmailValue] = useState<string>("");
+  const [loginPassword, setLoginPassword] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const handleLonginSubmit = async () => {
+    if (loginEmailValue && loginPassword) {
+      setIsLoading(true);
+      try {
         let payload = {
-          "email" : loginEmailValue,
-          "password" : loginPassword
-        }
+          email: loginEmailValue,
+          password: loginPassword,
+        };
 
-        const response = await fetch('https://singhbadal0802-x1py.vercel.app/api/auth/login',
+        const response = await fetch(
+          "https://singhbadal0802-x1py.vercel.app/api/auth/login",
           {
-            method : 'POST',
-            headers : {
-              'Content-Type' : 'application/json'
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
             },
-            body : JSON.stringify(payload)
-          }
-        )
+            body: JSON.stringify(payload),
+          },
+        );
 
         const data = await response.json();
 
-        if(data && data.token && data.user){
-          const timer = setTimeout(()=>{
+        if (data && data.token && data.user) {
           setIsLoading(false);
-          sessionStorage.setItem('userDetails', JSON.stringify(data.user));
-          debugger;
+          sessionStorage.setItem("userDetails", JSON.stringify(data.user));
           window.location.href = "/";
-          },2000);
         }
-      }catch(error){
-        console.log('❌ Error fetching user details : ', error);
-      }finally{
-        const timer = setTimeout(()=>{
-          setIsLoading(false);
-          },2000);
-
-          return () => clearTimeout(timer);
-      }
+      } catch (error) {
+        console.log("❌ Error fetching user details : ", error);
+      } finally {
+        setIsLoading(false);
       }
     }
+  };
+
+  useEffect(() => {
+    sessionStorage.removeItem("nonLoginAccepted");
+  }, []);
 
   return (
     <div className="flex w-full justify-center items-center h-[100vh] bg-light inset-shadow-white">
-      <div className="relative grid grid-cols-2 w-[70%] h-[70%] rounded-lg z-2 overflow-hidden transition-all delay-400 duration-600 ease-in-out border border-1 border-primary/50 px-2 backdrop-blur-sm">
-        <div className={`w-[50%] h-[800px] bg-white absolute -top-20 ${stateValue === "login" ? "-left-25 -rotate-20" : "left-[625px] rotate-20"} z-1 transition-all duration-600 ease-in-out`}>
-        <div className={"flex flex-col justify-center items-center w-full h-full bg-primary/30 rounded-lg"}>
-            <div className={`text-not-convertable text-heading1 font-bold m-4 transition-all ${stateValue === "login" ? "rotate-20 text-left ml-40" : "-rotate-20 text-right mr-40"} transition-all duration-600 ease-in-out`}>{stateValue === "login" ? "If already with us, Click here" : "New here..? click to join us"}</div>
-            <Button buttonLabel={stateValue === "register" ? "Signup" : "Login"} variant="brand-primary" tone="primary" onClick={()=>{setStateValue(stateValue === "login" ? "register" : "login")}} customClass={`${stateValue === "login" ? "rotate-20" : "-rotate-20"} transition-all duration-600 ease-in-out text-opposite`}/>
+      <div className="relative grid grid-cols-2 w-[70%] h-[70%] overflow-hidden rounded-lg z-2 transition-all delay-400 duration-600 ease-in-out border border-1 border-primary/50 px-2 backdrop-blur-sm">
+        <div className="flex justify-center rounded-full bg-primary/20 absolute -top-10 -left-20 p-4 z-3 animate-pulse duration-400">
+          <div className="w-40 h-40 rounded-full bg-primary"></div>
         </div>
+        <div
+          className={`w-[50%] h-[800px] bg-white absolute -top-20 ${stateValue === "login" ? "-left-25 -rotate-20" : "left-[625px] rotate-20"} z-1 transition-all duration-600 ease-in-out`}
+        >
+          <div
+            className={
+              "flex flex-col justify-center items-center w-full h-full bg-primary/30 rounded-lg"
+            }
+          >
+            <div
+              className={`text-not-convertable text-heading1 font-bold m-4 transition-all ${stateValue === "login" ? "rotate-20 text-left ml-40" : "-rotate-20 text-right mr-40"} transition-all duration-600 ease-in-out`}
+            >
+              {stateValue === "login"
+                ? "If already with us, Click here"
+                : "New here..? click to join us"}
+            </div>
+            <Button
+              buttonLabel={stateValue === "register" ? "Signup" : "Login"}
+              variant="brand-primary"
+              tone="primary"
+              onClick={() => {
+                setStateValue(stateValue === "login" ? "register" : "login");
+              }}
+              customClass={`${stateValue === "login" ? "rotate-20" : "-rotate-20"} transition-all duration-600 ease-in-out text-opposite`}
+            />
+          </div>
         </div>
         <div className="flex flex-col justify-center items-center m-auto gap-8">
-            {/* <input className="rounded-lg border border-1 border-primary px-2 py-4 bg-gray-100" type="name" placeholder="name"/> */}
-            <input className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100" type="email" placeholder="abc@gmail.com" onChange={(e)=>{setLoginEmailValue(e.target.value)}}/>
-            <input className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100" type="password" placeholder="password"  onChange={(e)=>{setLoginPassword(e.target.value)}}/>
-            <Button variant="brand-primary" tone="success" buttonLabel="Login" onClick={handleLonginSubmit} customClass="flex w-full justify-center text-lg" isLoading={isLoading}/>
+          {/* <input className="rounded-lg border border-1 border-primary px-2 py-4 bg-gray-100" type="name" placeholder="name"/> */}
+          <input
+            className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
+            type="email"
+            placeholder="abc@gmail.com"
+            onChange={(e) => {
+              setLoginEmailValue(e.target.value);
+            }}
+          />
+          <input
+            className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
+            type="password"
+            placeholder="password"
+            onChange={(e) => {
+              setLoginPassword(e.target.value);
+            }}
+          />
+          <Button
+            variant="brand-primary"
+            tone="success"
+            buttonLabel="login"
+            onClick={handleLonginSubmit}
+            customClass={`flex w-full justify-center text-lg ${isLoading ? "backdrop-blur-sm opacity-[50%]" : ""}`}
+            isLoading={isLoading}
+            disabled={isLoading}
+          />
         </div>
         <div className="flex justify-center items-center m-auto">
-        <form className="flex flex-col justify-center items-center m-auto gap-8">
-            <input className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100" type="name" placeholder="name"/>
-            <input className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100" type="email" placeholder="abc@gmail.com"/>
-            <input className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100" type="password" placeholder="password"/>
-            <Button variant="brand-primary" tone="success" buttonLabel="Signup" onClick={()=>{}} customClass="w-full"/>
-        </form>
+          <form className="flex flex-col justify-center items-center m-auto gap-8">
+            <input
+              className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
+              type="name"
+              placeholder="name"
+            />
+            <input
+              className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
+              type="email"
+              placeholder="abc@gmail.com"
+            />
+            <input
+              className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
+              type="password"
+              placeholder="password"
+            />
+            <Button
+              variant="brand-primary"
+              tone="success"
+              buttonLabel="Signup"
+              onClick={() => {}}
+              customClass="w-full"
+            />
+          </form>
+        </div>
+        <div className="flex justify-center rounded-full bg-primary/20 absolute -bottom-10 -right-20 p-4 z-3 animate-pulse">
+          <div className="w-40 h-40 rounded-full bg-primary"></div>
         </div>
       </div>
     </div>

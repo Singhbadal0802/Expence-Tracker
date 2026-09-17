@@ -11,7 +11,9 @@ const Button = ({
   tone,
   customClass = '',
   isLoading = false,
+  disabled
 } : ButtonProps) => {
+  console.log('disabled====', buttonLabel ,disabled)
   return (
     <button 
     className={cn({
@@ -20,6 +22,7 @@ const Button = ({
       [customClass] : customClass
     })}
     onClick={() => {onClick()}}
+    disabled={disabled}
     >
       {isLoading ? <LoaderCircle className='animate-spin'/> : buttonLabel}
     </button>
