@@ -6,4 +6,5 @@ export interface ButtonProps {
   customClass? : string;
   isLoading? : boolean;
   disabled? : boolean;
+  tabIndex? : number;
 }

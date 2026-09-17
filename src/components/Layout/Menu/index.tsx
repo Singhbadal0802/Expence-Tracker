@@ -41,7 +41,7 @@ const MenuBar = () => {
     {
       icon: PlusCircle,
       menuLabel: "Add Transaction",
-      menuUrl: "/new",
+      menuUrl: "/entries",
     },
     {
       icon: LayoutFreeform,

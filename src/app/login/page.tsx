@@ -80,7 +80,7 @@ const Login = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center m-auto gap-8">
+        <form className="flex flex-col justify-center items-center m-auto gap-8">
           {/* <input className="rounded-lg border border-1 border-primary px-2 py-4 bg-gray-100" type="name" placeholder="name"/> */}
           <input
             className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
@@ -107,7 +107,7 @@ const Login = () => {
             isLoading={isLoading}
             disabled={isLoading}
           />
-        </div>
+        </form>
         <div className="flex justify-center items-center m-auto">
           <form className="flex flex-col justify-center items-center m-auto gap-8">
             <input
