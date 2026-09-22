@@ -1,5 +1,6 @@
 "use client";
 import Button from "@/components/UI/Button";
+import constants from "@/utilities/constants";
 import { useEffect, useState } from "react";
 
 const Login = () => {
@@ -19,7 +20,7 @@ const Login = () => {
         };
 
         const response = await fetch(
-          "https://singhbadal0802-x1py.vercel.app/api/auth/login",
+          `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}${constants.USER_LOGIN_ENDPOINT}`,
           {
             method: "POST",
             headers: {
@@ -32,14 +33,26 @@ const Login = () => {
         const data = await response.json();
 
         if (data && data.token && data.user) {
-          setIsLoading(false);
+          const entriesUrl = `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}${constants.NEW_TRANSACTION_API_URL}`;
+          const response = await fetch(entriesUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              email: "badalrkt23@gmail.com",
+              name: "badal singh",
+            }),
+          });
+
+          const userData = await response.json();
           sessionStorage.setItem("userDetails", JSON.stringify(data.user));
+          sessionStorage.setItem("userData", JSON.stringify(userData));
+          setIsLoading(false);
           window.location.href = "/";
         }
       } catch (error) {
         console.log("❌ Error fetching user details : ", error);
-      } finally {
-        setIsLoading(false);
       }
     }
   };

@@ -6,10 +6,13 @@ import CustomDropdown from "@/components/UI/CustomDropdown";
 import { Group } from "lucide-react";
 import TransactionHeader from "@/components/UI/TransactionHeader";
 import TextArea from "@/components/UI/TextArea";
+import constants from "@/utilities/constants";
 
 const page = () => {
   const [type, setType] = useState<"Expense" | "Income">("Expense");
-  const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined);
+  const [selectedCategory, setSelectedCategory] = useState<string | undefined>(
+    undefined,
+  );
 
   const inputFields = [
     {
@@ -22,8 +25,8 @@ const page = () => {
     },
     {
       type: "number",
-      placeholder: "Enter the ammount",
-      inputTitle: "Ammount",
+      placeholder: "Enter the amount",
+      inputTitle: "Amount",
       error: false,
       errorMessage: "Email is required",
     },
@@ -39,61 +42,99 @@ const page = () => {
     { label: "Bills", value: "Bills" },
     { label: "Other", value: "Other" },
   ];
+
+  const handleSubmit = async (event:any) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+
+  const data = Object.fromEntries(formData.entries());
+
+  try{
+    const entriesUrl = `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}${constants.NEW_TRANSACTION_API_URL}`;
+    const response = await fetch(entriesUrl, {
+      method : "POST",
+      headers : {
+        "Content-Type" : "application/json"
+      },
+      body : JSON.stringify({"email" : "badalrkt23@gmail.com", "name" : "badal singh"})
+    })
+
+    const userData = await response.json();
+    console.log('user-data-------------------------------',userData)
+  }catch(error){
+    console.error("❌", error)
+  }
+};
+
   return (
-    <div className="flex flex-col gap-4 w-full">
+    <div className="flex flex-col w-full">
       <TransactionHeader />
-      <div className="flex flex-col gap-4 w-[40%] m-4 rounded-xl border border-3 border-gray-200 min-w-[200px] shadow-lg transition-all duration-400 p-8">
-        <div className="flex flex-col gap-4 w-full">
-          <label className={"font-semibold"}>Type</label>
-          <div className="flex gap-4 w-full">
-            <Button
-              tabIndex={1}
-              buttonLabel="Expense"
-              variant="brand-secondary"
-              tone="danger"
-              onClick={() => {
-                setType("Expense");
-              }}
-              customClass={`flex flex-1 ${type === "Expense" ? "border-3 font-semibold" : "border-danger/50 text-danger/50"}`}
-            />
-            <Button
-              tabIndex={2}
-              buttonLabel="Income"
-              variant="brand-secondary"
-              tone="success"
-              onClick={() => {
-                setType("Income");
-              }}
-              customClass={`flex flex-1 ${type === "Income" ? "border-3 font-semibold" : "border-success/50 text-success/50"}`}
-            />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="flex flex-col row-span-2 bg-background gap-4 m-4 rounded-xl border border-3 border-gray-200 shadow-lg transition-all duration-400 p-8">
+          <div className="flex flex-col gap-4 w-full">
+            <label className={"font-semibold"}>Type</label>
+            <div className="flex gap-4 w-full">
+              <Button
+                tabIndex={1}
+                buttonLabel="Expense"
+                variant="brand-secondary"
+                tone="danger"
+                onClick={() => {
+                  setType("Expense");
+                }}
+                customClass={`flex flex-1 ${type === "Expense" ? "border-3 font-semibold" : "border-danger/50 text-danger/50"}`}
+              />
+              <Button
+                tabIndex={2}
+                buttonLabel="Income"
+                variant="brand-secondary"
+                tone="success"
+                onClick={() => {
+                  setType("Income");
+                }}
+                customClass={`flex flex-1 ${type === "Income" ? "border-3 font-semibold" : "border-success/50 text-success/50"}`}
+              />
+            </div>
           </div>
-        </div>
-        <form className="flex flex-col gap-6 w-full">
-          {inputFields.map((field, index) => (
-            <Input
-              key={index}
-              type={field.type}
-              placeholder={field.placeholder}
-              inputTitle={field.inputTitle}
-              defaultValue={field.defaultValue}
-              error={field.error}
-              errorMessage={field.errorMessage}
-              tabIndex={index + 3}
+          <form className="flex flex-col gap-6 w-full" onSubmit={handleSubmit}>
+            {inputFields.map((field, index) => (
+              <Input
+                key={index}
+                type={field.type}
+                placeholder={field.placeholder}
+                inputTitle={field.inputTitle}
+                defaultValue={field.defaultValue}
+                error={field.error}
+                errorMessage={field.errorMessage}
+                tabIndex={index + 3}
+                name={field.inputTitle.toLowerCase()}
+              />
+            ))}
+            <CustomDropdown
+              icon={<Group />}
+              inputTitle="Category"
+              options={categories}
+              onSelect={(category) => {
+                setSelectedCategory(category);
+              }}
+              selectedOption={selectedCategory}
+              name="category"
             />
-          ))}
-          <CustomDropdown icon={<Group/>} inputTitle="Category" options={categories} onSelect={(category)=>{setSelectedCategory(category)}} selectedOption={selectedCategory}/>
-          <TextArea inputTitle = "Description (optional)"/>
-          <Button
-            tabIndex={inputFields.length + 3}
-            buttonLabel="Add Transaction"
-            variant="brand-primary"
-            tone="primary"
-            onClick={() => {
-              // Handle form submission logic here
-              alert("TO DO: Implement form submission logic");
-            }}
-          />
-        </form>
+            <TextArea inputTitle="Description (optional)" name="description"/>
+            <Button
+            //@ts-ignore
+              type="submit"
+              tabIndex={inputFields.length + 3}
+              buttonLabel="Add Transaction"
+              variant="brand-primary"
+              tone="primary"
+              customClass="text-opposite font-semibold"
+            />
+          </form>
+        </div>
+        <div className="flex flex-col row-span-1 flex-1 gap-4 m-4 rounded-xl border border-3 border-gray-200 shadow-lg transition-all duration-400">Quick add</div>
+        <div className="flex flex-col row-span-1 flex-1 gap-4 m-4 rounded-xl border border-3 border-gray-200 shadow-lg transition-all duration-400">Quick add</div>
       </div>
     </div>
   );

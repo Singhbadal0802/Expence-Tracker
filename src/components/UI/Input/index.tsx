@@ -9,7 +9,8 @@ const Input = ({
     defaultValue = "",
     error = false,
     errorMessage = "Error message",
-    tabIndex
+    tabIndex,
+    name
 }: InputProps) => {
   return (
     <div className="flex flex-col gap-1 transition duration-600 ease-in-out">
@@ -28,6 +29,7 @@ const Input = ({
             spellCheck={true}
             min={0}
             tabIndex={tabIndex}
+            name={name}
         />
         {error && errorMessage && <span className='text-danger text-sm'>{errorMessage}</span>}
     </div>

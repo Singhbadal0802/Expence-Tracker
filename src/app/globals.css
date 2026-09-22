@@ -10,7 +10,7 @@
   --success: #10B981;
   --warning: #F59E0B;
   --danger: #EF4444;
-  --surface: #F3F4F6;
+  --surface: rgb(239, 238, 238);
   --not-convertable : #000;
   --opposite : #fff;
 
@@ -72,6 +72,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #F3F4F6;
+    --surface: #0a0a0a;
 
     --primary: #63f1f1;
     --not-convertable: #000;
@@ -82,7 +83,7 @@
 }
 
 body {
-  background: var(--background);
+  /* background: var(--background); */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

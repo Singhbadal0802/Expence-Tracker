@@ -6,4 +6,5 @@ export interface InputProps {
     error?: boolean;
     errorMessage?: string;
     tabIndex?: number;
+    name: string;
 }

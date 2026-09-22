@@ -12,6 +12,7 @@ const CustomDropdown = ({
   icon,
   inputTitle = "",
   error = false,
+  name
 }: CustomDropdownProps) => {
   return (
     <div className={cn({
@@ -40,6 +41,7 @@ const CustomDropdown = ({
             ["border-danger"]: error,
           })}
           tabIndex={tabIndex}
+          name={name}
         >
           {options.map((option, index) => (
             <option key={index} value={option?.value} className={cn({

@@ -7,6 +7,7 @@ export interface CustomDropdownProps {
   icon?: React.ReactNode;
   inputTitle?: string;
   error?: boolean;
+  name: string;
 }
 
 type optionType = {

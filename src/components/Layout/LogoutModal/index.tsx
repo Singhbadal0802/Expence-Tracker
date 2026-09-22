@@ -15,7 +15,6 @@ const LogoutModal = () => {
     const session = sessionStorage.getItem("nonLoginAccepted");
     sessionStorage.getItem("userDetails") && setUserDetails(JSON.parse(sessionStorage.getItem("userDetails") || ""));
     setSessionValue(session ?  session !== 'true' : true);
-    console.log('sessionValue====', session !== 'true')
   }, []);
 
   useEffect(() => {
