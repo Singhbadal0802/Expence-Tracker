@@ -7,6 +7,7 @@ import { Group } from "lucide-react";
 import TransactionHeader from "@/components/UI/TransactionHeader";
 import TextArea from "@/components/UI/TextArea";
 import constants from "@/utilities/constants";
+import QuickAdd from "@/components/MFA/QuickAddCard";
 
 const page = () => {
   const [type, setType] = useState<"Expense" | "Income">("Expense");
@@ -133,8 +134,8 @@ const page = () => {
             />
           </form>
         </div>
-        <div className="flex flex-col row-span-1 flex-1 gap-4 m-4 rounded-xl border border-3 border-gray-200 shadow-lg transition-all duration-400">Quick add</div>
-        <div className="flex flex-col row-span-1 flex-1 gap-4 m-4 rounded-xl border border-3 border-gray-200 shadow-lg transition-all duration-400">Quick add</div>
+        <QuickAdd/>
+        <QuickAdd/>
       </div>
     </div>
   );

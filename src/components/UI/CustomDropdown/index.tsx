@@ -12,7 +12,8 @@ const CustomDropdown = ({
   icon,
   inputTitle = "",
   error = false,
-  name
+  name,
+  iconCustomClass
 }: CustomDropdownProps) => {
   return (
     <div className={cn({
@@ -30,9 +31,12 @@ const CustomDropdown = ({
         </label>
       )}
       <div className={style.inputWrapper}>
-        <div className={style.inputIcon}>
-          {icon && <span className="text-primary">{icon}</span>}
-        </div>
+        {icon && <div className={style.inputIcon}>
+           <span className={cn({
+            ['text-primary'] : !iconCustomClass,
+            [`${iconCustomClass}`] : iconCustomClass
+           })}>{icon}</span>
+        </div>}
         <select
           value={selectedOption}
           onChange={(e) => onSelect(e.target.value)}
@@ -45,7 +49,7 @@ const CustomDropdown = ({
         >
           {options.map((option, index) => (
             <option key={index} value={option?.value} className={cn({
-                ["flex text-body1 text-foreground"]: true,
+                ["flex text-body1"]: true,
                 ["font-semibold bg-gray-200"]: (index === 0 && typeof option?.value === "undefined"),
             })}>
               {option?.label}

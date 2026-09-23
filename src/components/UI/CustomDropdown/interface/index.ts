@@ -8,9 +8,10 @@ export interface CustomDropdownProps {
   inputTitle?: string;
   error?: boolean;
   name: string;
+  iconCustomClass?: string;
 }
 
 type optionType = {
   label: string;
-  value: string | undefined;
+  value: string | number | undefined;
 };
