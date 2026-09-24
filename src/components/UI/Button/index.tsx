@@ -22,7 +22,9 @@ const Button = ({
       [brandSecondary({colorTone : tone})] : variant === "brand-secondary",
       [customClass] : customClass
     })}
-    onClick={() => {onClick()}}
+    onClick={(e) => {
+      e.preventDefault();
+      onClick()}}
     disabled={disabled}
     tabIndex={tabIndex}
     >

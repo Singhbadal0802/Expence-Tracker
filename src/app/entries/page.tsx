@@ -52,17 +52,17 @@ const page = () => {
   const data = Object.fromEntries(formData.entries());
 
   try{
-    const entriesUrl = `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}${constants.NEW_TRANSACTION_API_URL}`;
-    const response = await fetch(entriesUrl, {
-      method : "POST",
-      headers : {
-        "Content-Type" : "application/json"
-      },
-      body : JSON.stringify({"email" : "badalrkt23@gmail.com", "name" : "badal singh"})
-    })
+    // const entriesUrl = `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}${constants.NEW_TRANSACTION_API_URL}`;
+    // const response = await fetch(entriesUrl, {
+    //   method : "POST",
+    //   headers : {
+    //     "Content-Type" : "application/json"
+    //   },
+    //   body : JSON.stringify({"email" : "badalrkt23@gmail.com", "name" : "badal singh"})
+    // })
 
-    const userData = await response.json();
-    console.log('user-data-------------------------------',userData)
+    // const userData = await response.json();
+    console.log('user-data-------------------------------')
   }catch(error){
     console.error("❌", error)
   }
@@ -121,6 +121,7 @@ const page = () => {
               }}
               selectedOption={selectedCategory}
               name="category"
+              tabIndex={5}
             />
             <TextArea inputTitle="Description (optional)" name="description"/>
             <Button
@@ -131,11 +132,12 @@ const page = () => {
               variant="brand-primary"
               tone="primary"
               customClass="text-opposite font-semibold"
+              onClick={()=>{}}
             />
           </form>
         </div>
         <QuickAdd/>
-        <QuickAdd/>
+        {/* <QuickAdd/> */}
       </div>
     </div>
   );

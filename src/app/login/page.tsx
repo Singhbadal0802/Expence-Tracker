@@ -2,13 +2,17 @@
 import Button from "@/components/UI/Button";
 import constants from "@/utilities/constants";
 import { useEffect, useState } from "react";
+import { fetchUserData } from "./utility";
 
 const Login = () => {
   const [stateValue, setStateValue] = useState<"login" | "register">(
     "register",
   );
   const [loginEmailValue, setLoginEmailValue] = useState<string>("");
+  const [registerEmailValue, setRegisterEmailValue] = useState<string>("");
+  const [registerName, setRegisterName] = useState<string>("");
   const [loginPassword, setLoginPassword] = useState<string>("");
+  const [registerPassword, setRegisterPassword] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const handleLonginSubmit = async () => {
     if (loginEmailValue && loginPassword) {
@@ -33,19 +37,7 @@ const Login = () => {
         const data = await response.json();
 
         if (data && data.token && data.user) {
-          const entriesUrl = `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}${constants.NEW_TRANSACTION_API_URL}`;
-          const response = await fetch(entriesUrl, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              email: "badalrkt23@gmail.com",
-              name: "badal singh",
-            }),
-          });
-
-          const userData = await response.json();
+          const userData = await fetchUserData(loginEmailValue);
           sessionStorage.setItem("userDetails", JSON.stringify(data.user));
           sessionStorage.setItem("userData", JSON.stringify(userData));
           setIsLoading(false);
@@ -53,6 +45,44 @@ const Login = () => {
         }
       } catch (error) {
         console.log("❌ Error fetching user details : ", error);
+      }
+    }
+  };
+
+  const handleNewRegister = async () => {
+    if (registerEmailValue && registerPassword && registerName) {
+      debugger;
+      setIsLoading(true);
+      try {
+        let payload = {
+          name: registerName,
+          email: registerEmailValue,
+          password: registerPassword,
+        };
+
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}${constants.NEW_USER_REGISTER_ENDPOINT}`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          },
+        );
+
+        const res = await response.json();
+
+        if (res?.data && res?.data.token && res?.data.user) {
+          const userData = await fetchUserData(registerEmailValue);
+          sessionStorage.setItem("userDetails", JSON.stringify(res.data.user));
+          sessionStorage.setItem("userData", JSON.stringify(userData));
+          setIsLoading(false);
+          window.location.href = "/";
+        }
+        console.log("success data found-------------------------", res.data);
+      } catch (err) {
+        console.error("🔴 Error to create a new user : ", err);
       }
     }
   };
@@ -127,23 +157,33 @@ const Login = () => {
               className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
               type="name"
               placeholder="name"
+              onChange={(e) => {
+                setRegisterName(e.target.value);
+              }}
             />
             <input
               className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
               type="email"
               placeholder="abc@gmail.com"
+              onChange={(e) => {
+                setRegisterEmailValue(e.target.value);
+              }}
             />
             <input
               className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
               type="password"
               placeholder="password"
+              onChange={(e) => {
+                setRegisterPassword(e.target.value);
+              }}
             />
             <Button
               variant="brand-primary"
               tone="success"
               buttonLabel="Signup"
-              onClick={() => {}}
-              customClass="w-full"
+              onClick={handleNewRegister}
+              isLoading={isLoading}
+              customClass={`flex w-full justify-center text-lg ${isLoading ? "backdrop-blur-sm opacity-[50%]" : ""}`}
             />
           </form>
         </div>

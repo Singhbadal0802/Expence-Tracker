@@ -32,8 +32,8 @@ const QuickAdd = () => {
   ];
 
   return (
-    <div className="flex flex-col row-span-1 flex-1 gap-4 m-4 rounded-xl shadow-lg transition-all duration-400 border border-2 border-white">
-      <div className="flex flex-row items-center gap-4 font-semibold text-heading2 p-4 bg-warning/50 rounded-xl">
+    <div className="flex flex-col row-span-1 flex-1 gap-4 m-4 rounded-xl shadow-lg transition-all duration-400 border border-2 border-white overflow-hidden">
+      <div className="flex flex-row items-center gap-4 font-semibold text-heading2 p-4 bg-warning/50">
         <Zap className="text-danger fill-danger" />
         Quick Add
       </div>
@@ -51,7 +51,7 @@ const QuickAdd = () => {
               buttonLabel="Add Transaction"
               variant="brand-primary"
               tone="success"
-              customClass="font-semibold"
+              customClass="font-semibold text-background"
             />
         </form>
     </div>

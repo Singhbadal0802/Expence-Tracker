@@ -49,7 +49,7 @@ const CustomDropdown = ({
         >
           {options.map((option, index) => (
             <option key={index} value={option?.value} className={cn({
-                ["flex text-body1"]: true,
+                ["flex text-body1 text-black"]: true,
                 ["font-semibold bg-gray-200"]: (index === 0 && typeof option?.value === "undefined"),
             })}>
               {option?.label}
