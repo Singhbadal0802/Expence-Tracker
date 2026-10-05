@@ -59,14 +59,15 @@ const DashboardCards = ({ selectedMonth }: DashboardCardsPorps) => {
     setIsLoading(true);
 
     const data = sessionStorage.getItem("userData");
+    const user = JSON.parse(data ?? "{}") as ExpenseTrackerResponse;
     if (data) {
-      setUserData(JSON.parse(data));
+      setUserData(user);
       setIsLoading(false);
     }
   }, []);
 
   useEffect(() => {
-    setIsLoading(true);
+    setIsLoading(true)
     if (!selectedMonth || !userData?.monthlySummary) return;
 
     const currentMonthIndex = userData.monthlySummary.findIndex(
@@ -161,6 +162,8 @@ const DashboardCards = ({ selectedMonth }: DashboardCardsPorps) => {
       },
     ];
   }, [userData, selectedMonthData, lastMonthData]);
+
+  console.log('test=isloading : ', genericCardArray);
 
   return (
     <>

@@ -3,6 +3,8 @@ import Button from "@/components/UI/Button";
 import constants from "@/utilities/constants";
 import { useEffect, useState } from "react";
 import { fetchUserData } from "./utility";
+import Input from "@/components/UI/Input";
+import { CaseSensitive, EyeOff } from "lucide-react";
 
 const Login = () => {
   const [stateValue, setStateValue] = useState<"login" | "register">(
@@ -14,6 +16,9 @@ const Login = () => {
   const [loginPassword, setLoginPassword] = useState<string>("");
   const [registerPassword, setRegisterPassword] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [passwordVisible, setPasswordVisible] = useState<boolean>(false);
+  const [loginError, setLoginError] = useState<boolean>(false);
+  const [registerError, setRegisterError] = useState<boolean>(false);
   const handleLonginSubmit = async () => {
     if (loginEmailValue && loginPassword) {
       setIsLoading(true);
@@ -33,17 +38,23 @@ const Login = () => {
             body: JSON.stringify(payload),
           },
         );
-
         const data = await response.json();
 
         if (data && data.token && data.user) {
-          const userData = await fetchUserData(loginEmailValue);
+          setLoginError(false);
+          const fetuserUrl = `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}${constants.GET_USERDATA_API_URL}`;
+          const userData = await fetchUserData(fetuserUrl, loginEmailValue);
           sessionStorage.setItem("userDetails", JSON.stringify(data.user));
           sessionStorage.setItem("userData", JSON.stringify(userData));
           setIsLoading(false);
           window.location.href = "/";
+        } else {
+          throw new Error("Invalid login credentials");
         }
       } catch (error) {
+        debugger;
+        setIsLoading(false);
+        setLoginError(true);
         console.log("❌ Error fetching user details : ", error);
       }
     }
@@ -74,14 +85,22 @@ const Login = () => {
         const res = await response.json();
 
         if (res?.data && res?.data.token && res?.data.user) {
-          const userData = await fetchUserData(registerEmailValue);
+          const entriesUrl = `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}${constants.NEW_USERDATA_API_URL}`;
+          const userData = await fetchUserData(
+            entriesUrl,
+            registerEmailValue,
+            registerName,
+          );
           sessionStorage.setItem("userDetails", JSON.stringify(res.data.user));
           sessionStorage.setItem("userData", JSON.stringify(userData));
           setIsLoading(false);
           window.location.href = "/";
+        }else {
+          throw new Error("Register api failed");
         }
-        console.log("success data found-------------------------", res.data);
       } catch (err) {
+        setIsLoading(false);
+        setRegisterError(true);
         console.error("🔴 Error to create a new user : ", err);
       }
     }
@@ -93,7 +112,7 @@ const Login = () => {
 
   return (
     <div className="flex w-full justify-center items-center h-[100vh] bg-light inset-shadow-white">
-      <div className="relative grid grid-cols-2 w-[70%] h-[70%] overflow-hidden rounded-lg z-2 transition-all delay-400 duration-600 ease-in-out border border-1 border-primary/50 px-2 backdrop-blur-sm">
+      <div className="relative grid grid-cols-2 w-[70%] h-[70%] min-h-[450px] overflow-hidden z-2 transition-all delay-400 duration-600 ease-in-out border border-1 border-primary/50 px-2 backdrop-blur-sm rounded-r-4xl">
         <div className="flex justify-center rounded-full bg-primary/20 absolute -top-10 -left-20 p-4 z-3 animate-pulse duration-400">
           <div className="w-40 h-40 rounded-full bg-primary"></div>
         </div>
@@ -124,23 +143,43 @@ const Login = () => {
           </div>
         </div>
         <form className="flex flex-col justify-center items-center m-auto gap-8">
-          {/* <input className="rounded-lg border border-1 border-primary px-2 py-4 bg-gray-100" type="name" placeholder="name"/> */}
-          <input
-            className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
-            type="email"
-            placeholder="abc@gmail.com"
-            onChange={(e) => {
-              setLoginEmailValue(e.target.value);
-            }}
-          />
-          <input
-            className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
-            type="password"
-            placeholder="password"
-            onChange={(e) => {
-              setLoginPassword(e.target.value);
-            }}
-          />
+          <div className="rounded-lg text-white">
+            <Input
+              type="email"
+              placeholder="abc@gmail.com"
+              name="email"
+              onChange={(e) => {
+                e.preventDefault();
+                setLoginEmailValue(e.target.value);
+              }}
+              inputTitle="Email"
+              error={loginError}
+              errorMessage="You have entered wrong details.!"
+            />
+          </div>
+          <div className="flex flex-row relative text-white rounded-lg">
+            <Input
+              type={passwordVisible ? "password" : "text"}
+              placeholder="********"
+              name="password"
+              onChange={(e) => {
+                e.preventDefault();
+                setLoginPassword(e.target.value);
+              }}
+              inputTitle="Password"
+              error={loginError}
+              errorMessage="You have entered wrong details.!"
+            />
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setPasswordVisible(!passwordVisible);
+              }}
+              className="absolute -right-8 top-10 focus:outline-none"
+            >
+              {passwordVisible ? <CaseSensitive /> : <EyeOff />}
+            </button>
+          </div>
           <Button
             variant="brand-primary"
             tone="success"
@@ -153,30 +192,57 @@ const Login = () => {
         </form>
         <div className="flex justify-center items-center m-auto">
           <form className="flex flex-col justify-center items-center m-auto gap-8">
-            <input
-              className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
-              type="name"
-              placeholder="name"
-              onChange={(e) => {
-                setRegisterName(e.target.value);
-              }}
-            />
-            <input
-              className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
-              type="email"
-              placeholder="abc@gmail.com"
-              onChange={(e) => {
-                setRegisterEmailValue(e.target.value);
-              }}
-            />
-            <input
-              className="text-not-convertable rounded-lg border border-1 border-primary p-2 bg-gray-100"
-              type="password"
-              placeholder="password"
-              onChange={(e) => {
-                setRegisterPassword(e.target.value);
-              }}
-            />
+            <div className="rounded-lg text-white">
+              <Input
+                type="text"
+                placeholder="John Doe"
+                name="email"
+                onChange={(e) => {
+                  e.preventDefault();
+                  setRegisterEmailValue(e.target.value);
+                }}
+                inputTitle="Name"
+                error={registerError}
+                errorMessage="Something went wrong.!"
+              />
+            </div>
+            <div className="rounded-lg text-white">
+              <Input
+                type="email"
+                placeholder="abc@gmail.com"
+                name="email"
+                onChange={(e) => {
+                  e.preventDefault();
+                  setRegisterEmailValue(e.target.value);
+                }}
+                inputTitle="Email"
+                error={registerError}
+                errorMessage="Something went wrong.!"
+              />
+            </div>
+            <div className="flex flex-row relative text-white rounded-lg">
+              <Input
+                type={passwordVisible ? "password" : "text"}
+                placeholder="********"
+                name="password"
+                onChange={(e) => {
+                  e.preventDefault();
+                  setRegisterPassword(e.target.value);
+                }}
+                inputTitle="Password"
+                error={registerError}
+                errorMessage="Something went wrong.!"
+              />
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  setPasswordVisible(!passwordVisible);
+                }}
+                className="absolute -right-8 top-10 focus:outline-none"
+              >
+                {passwordVisible ? <CaseSensitive /> : <EyeOff />}
+              </button>
+            </div>
             <Button
               variant="brand-primary"
               tone="success"

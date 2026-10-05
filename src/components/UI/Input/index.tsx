@@ -5,12 +5,13 @@ import { cn } from '@/utilities/utility'
 const Input = ({
     type,
     placeholder,
-    inputTitle = "Title",
+    inputTitle = "",
     defaultValue = "",
     error = false,
     errorMessage = "Error message",
     tabIndex,
-    name
+    name,
+    ...props
 }: InputProps) => {
   return (
     <div className="flex flex-col gap-1 transition duration-600 ease-in-out">
@@ -30,6 +31,7 @@ const Input = ({
             min={0}
             tabIndex={tabIndex}
             name={name}
+            {...props}
         />
         {error && errorMessage && <span className='text-danger text-sm'>{errorMessage}</span>}
     </div>

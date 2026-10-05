@@ -1,13 +1,12 @@
-import constants from "@/utilities/constants";
+export const fetchUserData = async( url :string, email : string, name? : string) => {
+  if(!url || !email) return null;
 
-export const fetchUserData = async( email : string ) => {
-  const entriesUrl = `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}${constants.NEW_TRANSACTION_API_URL}`;
-  const response = await fetch(entriesUrl, {
+  const response = await fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ email }),
+    body: JSON.stringify({ email, name }),
   });
 
   const userData = await response.json() ?? {};
