@@ -45,7 +45,7 @@ const MenuBar = () => {
     <>
       {!isOnLoginPage && <LogoutModal />}
       {!isOnLoginPage && (
-        <nav className="h-[95vh] min-w-68 max-w-72 flex-col gap-md border-r-4 border-gray-200 hidden lg:flex  p-4">
+        <nav className="h-[95vh] min-w-68 max-w-72 flex-col gap-md border-r-4 border-gray-200 hidden lg:flex p-4">
           <div className="flex group text-center font-bold text-heading3 gap-4 items-center py-4">
             <img
               src="/assests/favicon.png"

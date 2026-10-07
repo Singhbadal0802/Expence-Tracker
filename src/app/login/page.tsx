@@ -4,7 +4,7 @@ import constants from "@/utilities/constants";
 import { useEffect, useState } from "react";
 import { fetchUserData } from "./utility";
 import Input from "@/components/UI/Input";
-import { CaseSensitive, EyeOff } from "lucide-react";
+import { CaseSensitive, EyeOff, Eye } from "lucide-react";
 
 const Login = () => {
   const [stateValue, setStateValue] = useState<"login" | "register">(
@@ -159,7 +159,7 @@ const Login = () => {
           </div>
           <div className="flex flex-row relative text-white rounded-lg">
             <Input
-              type={passwordVisible ? "password" : "text"}
+              type={passwordVisible ? "text" : "password"}
               placeholder="********"
               name="password"
               onChange={(e) => {
@@ -177,7 +177,7 @@ const Login = () => {
               }}
               className="absolute -right-8 top-10 focus:outline-none"
             >
-              {passwordVisible ? <CaseSensitive /> : <EyeOff />}
+              {passwordVisible ? <EyeOff/> : <Eye />}
             </button>
           </div>
           <Button

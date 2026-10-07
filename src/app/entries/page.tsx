@@ -1,48 +1,22 @@
 "use client";
+import React, { useState } from "react";
 import Button from "@/components/UI/Button";
 import Input from "@/components/UI/Input";
-import React, { useState } from "react";
 import CustomDropdown from "@/components/UI/CustomDropdown";
-import { Group } from "lucide-react";
+import { Group, CreditCardReader  } from 'lucide-react';
 import TransactionHeader from "@/components/UI/TransactionHeader";
 import TextArea from "@/components/UI/TextArea";
-import constants from "@/utilities/constants";
 import QuickAdd from "@/components/MFA/QuickAddCard";
+import { inputFields, categories, modeOfPaymentOptions } from "./utility/constants";
 
 const page = () => {
   const [type, setType] = useState<"Expense" | "Income">("Expense");
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(
     undefined,
   );
-
-  const inputFields = [
-    {
-      type: "text",
-      placeholder: "Enter title",
-      inputTitle: "Name",
-      defaultValue: "",
-      error: false,
-      errorMessage: "Name is required",
-    },
-    {
-      type: "number",
-      placeholder: "Enter the amount",
-      inputTitle: "Amount",
-      error: false,
-      errorMessage: "Email is required",
-    },
-  ];
-  const categories = [
-    { label: "Select category", value: undefined },
-    { label: "Food", value: "Food" },
-    { label: "Transport", value: "Transport" },
-    { label: "Shopping", value: "Shopping" },
-    { label: "Entertainment", value: "Entertainment" },
-    { label: "Health", value: "Health" },
-    { label: "Education", value: "Education" },
-    { label: "Bills", value: "Bills" },
-    { label: "Other", value: "Other" },
-  ];
+  const [modeOfPayment, setModeOfPayment] = useState<string | undefined>(
+    undefined,
+  );
 
   const handleSubmit = async (event:any) => {
   event.preventDefault();
@@ -120,6 +94,17 @@ const page = () => {
                 setSelectedCategory(category);
               }}
               selectedOption={selectedCategory}
+              name="category"
+              tabIndex={5}
+            />
+            <CustomDropdown
+              icon={<CreditCardReader />}
+              inputTitle="Mode of Payment"
+              options={modeOfPaymentOptions}
+              onSelect={(option) => {
+                setModeOfPayment(option);
+              }}
+              selectedOption={modeOfPayment}
               name="category"
               tabIndex={5}
             />
