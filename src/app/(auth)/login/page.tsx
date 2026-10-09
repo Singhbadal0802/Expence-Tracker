@@ -142,7 +142,7 @@ const Login = () => {
             />
           </div>
         </div>
-        <form className="flex flex-col justify-center items-center m-auto gap-8">
+        <form className="flex flex-col justify-center items-center m-auto gap-8" >
           <div className="rounded-lg text-white">
             <Input
               type="email"
@@ -171,6 +171,8 @@ const Login = () => {
               errorMessage="You have entered wrong details.!"
             />
             <button
+              type="button"
+              tabIndex={-1}
               onClick={(e) => {
                 e.preventDefault();
                 setPasswordVisible(!passwordVisible);
@@ -184,7 +186,10 @@ const Login = () => {
             variant="brand-primary"
             tone="success"
             buttonLabel="login"
-            onClick={handleLonginSubmit}
+            onClick={(e) => {
+              e.preventDefault();
+              handleLonginSubmit();
+            }}
             customClass={`flex w-full justify-center text-lg ${isLoading ? "backdrop-blur-sm opacity-[50%]" : ""}`}
             isLoading={isLoading}
             disabled={isLoading}
@@ -234,6 +239,8 @@ const Login = () => {
                 errorMessage="Something went wrong.!"
               />
               <button
+                type="button"
+                tabIndex={-1}
                 onClick={(e) => {
                   e.preventDefault();
                   setPasswordVisible(!passwordVisible);

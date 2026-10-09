@@ -12,7 +12,8 @@ const Button = ({
   customClass = '',
   isLoading = false,
   disabled,
-  tabIndex
+  tabIndex,
+  props
 } : ButtonProps) => {
 
   return (
@@ -24,9 +25,10 @@ const Button = ({
     })}
     onClick={(e) => {
       e.preventDefault();
-      onClick()}}
+      onClick && onClick(e)}}
     disabled={disabled}
     tabIndex={tabIndex}
+    {...props}
     >
       {isLoading ? <LoaderCircle className='animate-spin'/> : buttonLabel}
     </button>

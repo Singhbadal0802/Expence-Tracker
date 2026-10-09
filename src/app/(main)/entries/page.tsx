@@ -14,25 +14,32 @@ const page = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(
     undefined,
   );
+  const [merchantName, setMerchantName] = useState<string | null>(null);
+  const [amount, setAmount] = useState<number | null>(null);
+  const [notes, setNotes] = useState<string | null>(null);
   const [modeOfPayment, setModeOfPayment] = useState<string | undefined>(
     undefined,
   );
 
-  const handleSubmit = async (event:any) => {
-  event.preventDefault();
-
-  const formData = new FormData(event.target);
-
-  const data = Object.fromEntries(formData.entries());
+  const handleSubmit = async () => {
 
   try{
+    let payload = {
+      "type": type,
+      "merchant": merchantName,
+      amount,
+      "category": selectedCategory,
+      "paymentMode": modeOfPayment,
+      "notes": notes
+    }
+    console.log('payload-------------------------------', payload)
     // const entriesUrl = `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}${constants.NEW_TRANSACTION_API_URL}`;
     // const response = await fetch(entriesUrl, {
     //   method : "POST",
     //   headers : {
     //     "Content-Type" : "application/json"
     //   },
-    //   body : JSON.stringify({"email" : "badalrkt23@gmail.com", "name" : "badal singh"})
+    //   body : JSON.stringify(payload)
     // })
 
     // const userData = await response.json();
@@ -84,6 +91,13 @@ const page = () => {
                 errorMessage={field.errorMessage}
                 tabIndex={index + 3}
                 name={field.inputTitle.toLowerCase()}
+                onChange={(e) => {
+                  if (field.inputTitle === "Name") {
+                    setMerchantName(e.target.value);
+                  } else if (field.inputTitle === "Amount") {
+                    setAmount(Number(e.target.value));
+                  }
+                }}
               />
             ))}
             <CustomDropdown
@@ -108,16 +122,14 @@ const page = () => {
               name="category"
               tabIndex={5}
             />
-            <TextArea inputTitle="Description (optional)" name="description"/>
+            <TextArea inputTitle="Description (optional)" name="description" onChange={(e)=>{setNotes(e.target.value)}} autoCorrect="off"/>
             <Button
-            //@ts-ignore
-              type="submit"
               tabIndex={inputFields.length + 3}
               buttonLabel="Add Transaction"
               variant="brand-primary"
               tone="primary"
               customClass="text-opposite font-semibold"
-              onClick={()=>{}}
+              onClick={()=>{handleSubmit()}}
             />
           </form>
         </div>

@@ -69,9 +69,4 @@ export const MenuOptions = [
     menuLabel: "Help & Support",
     menuUrl: "/help",
   },
-  {
-    icon: LogOut,
-    menuLabel: "Logout",
-    menuUrl: "/logout",
-  },
 ];
