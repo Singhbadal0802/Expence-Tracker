@@ -6,7 +6,7 @@ const Input = ({
     type,
     placeholder,
     inputTitle = "",
-    defaultValue = "",
+    defaultValue,
     error = false,
     errorMessage = "Error message",
     tabIndex,
@@ -26,7 +26,7 @@ const Input = ({
             })}
             type={type ?? 'text'}
             placeholder={placeholder}
-            defaultValue={defaultValue}
+            {...(props.value === undefined && defaultValue !== undefined ? { defaultValue } : {})}
             spellCheck={true}
             min={0}
             tabIndex={tabIndex}

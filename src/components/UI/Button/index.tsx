@@ -25,7 +25,10 @@ const Button = ({
     })}
     onClick={(e) => {
       e.preventDefault();
-      onClick && onClick(e)}}
+      if (onClick) {
+        onClick(e);
+      }
+    }}
     disabled={disabled}
     tabIndex={tabIndex}
     {...props}

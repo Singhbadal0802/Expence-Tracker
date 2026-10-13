@@ -9,7 +9,6 @@ import {
   Settings,
   CircleUser,
   CircleHelp,
-  LogOut,
   PlusCircle,
 } from "lucide-react";
 

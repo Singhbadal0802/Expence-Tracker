@@ -31,7 +31,10 @@ const GenericNumberCard = ({
         {!isLoading ? (
           <>
             <span className="text-heading2">{currencySymbol}</span>{" "}
-            {Number(Ammount).toFixed(2)}
+            {Number(Ammount || 0).toLocaleString("en-IN", {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })}
           </>
         ) : (
           <div className="absolute inset-0 -translate-x-full animate-[shimmer_0.8s_infinite] bg-gradient-to-r from-transparent via-white to-transparent" />
@@ -55,7 +58,7 @@ const GenericNumberCard = ({
               <span className="font-bold p-1">
                 {performance === "Increase" ? "↗" : "↘"}
               </span>
-              {Math.abs(performanceAmmount)} %
+              {Math.abs(Number.isFinite(performanceAmmount) ? performanceAmmount : 0)} %
             </div>
             <span className="text-body1 font-regular text-gray-500">
               {labels.FROM_LAST_MONTH}
