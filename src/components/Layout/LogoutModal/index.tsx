@@ -32,7 +32,7 @@ const LogoutModal = () => {
         <div className="flex m-8 md:mx-16 text-heading1 font-medium text-opposite">
           Looks like you haven&apos;t logged in, you&apos;re missing a lot of things
         </div>
-        <div className="w-full flex my-8 bg-white h-auto p-4 px-16 justify-start gap-16">
+        <div className="w-full flex my-8 bg-white h-auto p-4 px-16 justify-start gap-8">
           <Button
             buttonLabel="Login"
             variant="brand-primary"
@@ -41,6 +41,13 @@ const LogoutModal = () => {
             onClick={() => {
               window.location.href = "/login";
             }}
+          />
+          <Button
+            buttonLabel="Continue as Guest"
+            variant="brand-secondary"
+            tone="danger"
+            customClass="text-heading3 font-semibold text-danger"
+            onClick={handleModalClose}
           />
         </div>
       </div>

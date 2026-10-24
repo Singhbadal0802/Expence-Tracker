@@ -60,7 +60,7 @@ export function getStoredUserDetails(): User {
   }
 
   const fullData = getStoredUserData();
-  return fullData.user;
+  return fullData?.user ?? null;
 }
 
 export interface NewTransactionPayload {
